@@ -6,17 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={NeuTechLogo}/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          NeuTech Foundation
-        </a>
       </header>
     </div>
   );
 }
+
 
 export default App;
