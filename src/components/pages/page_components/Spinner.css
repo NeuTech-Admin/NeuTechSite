@@ -1,0 +1,38 @@
+.spinner-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.25rem;
+    height: 6.25rem;
+    font-size: 10px;
+}
+
+.spinner{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1em solid transparent;
+    border-top-color: #44bfd2;
+    border-radius: 50%;
+    animation: spinner 1.2s ease infinite;
+}
+
+.bottom{
+    border: 1em solid transparent;
+    border-bottom-color: #44bfd2;
+}
+
+.spinner-logo{
+    height: 4rem;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+  

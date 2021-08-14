@@ -1,0 +1,75 @@
+.stats-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stats-title{
+    font-family: ubuntu-bold;
+    color: #244a64;
+    font-size: 5rem;
+}
+
+.devices-collected{
+    font-family: ubuntu-bold;
+    font-size: 3rem;
+    color: #244a64;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.countup-container {
+    height: fit-content;
+}
+
+.countup{
+    font-family: ubuntu-bold;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.device-stat-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.device-stats {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.laptop-img {
+    transform: rotateY(180deg);
+    width: 8rem;
+}
+
+.phone-img {
+    width: 8rem;
+}
+
+.tablet-img {
+    transform: rotateY(180deg);
+    width: 8rem;
+}
+
+.device-countup{
+    font-family: ubuntu-bold;
+    color: black;
+    font-size: 2.5rem;
+    bottom: 0;
+}

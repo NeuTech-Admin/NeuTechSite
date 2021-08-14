@@ -1,0 +1,89 @@
+.arm-container {
+    height: 100%;
+}
+
+.title-container {
+    width: 100%;
+    height: 35rem;
+    background-color: #244a64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arms-title{
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity ease 1.25s;
+}
+
+.arms-title.visible {
+    opacity: 1;
+}
+
+.arm-content {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arms {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.arms.first {
+    margin-top: 10rem;
+}
+
+.arms.second {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    margin-left: auto;
+}
+
+.arm-img {
+    height: 15rem;
+}
+
+.arm-img.dark {
+    color: #244a64;
+    margin-right: 5rem;
+}
+
+.arm-img.light {
+    margin-left: 5rem;
+}
+
+.arm-text-container {
+    width: 40rem;
+}
+
+.arm-text-container.second {
+    height: fit-content;
+    margin-left: auto;
+}
+
+.arm-headers {
+    font-family: ubuntu-bold;
+    font-size: 2rem;
+    color: #2c313f;
+    line-height: 4rem;
+}
+
+.arm-paragraphs {
+    font-family: ubuntu-regular;
+    color: #2c313f;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}

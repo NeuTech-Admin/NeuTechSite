@@ -1,27 +1,30 @@
 :root {
-    --primary: #1c5c6c;
-    --text: #fff;
+    --primary: #fff;
+    --text: #44bfd2;
 }
 
 .btn{
     padding: 8px 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     outline: none;
+    font-family: ubuntu-bold;
     border: none;
     cursor: pointer;
 }
 
+.btn-mobile {
+    outline: none;
+}
+
 .btn--primary {
     background-color: var(--primary);
-    color: var(--text);
-    border: 1px solid var(--primary);
+    color: #1d5d6d;
 }
 
 .btn--outline {
     background-color: transparent;
-    color: var(--text);
+    color: #1d5d6d;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
 }
 
@@ -32,11 +35,15 @@
 
 .btn--large {
     padding: 8px 26px;
-    font-size: 20px
+    font-size: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    width: 15rem;
+    height: 3rem;
+    transition: all 0.3s ease-out;
 }
 
 .btn--medium:hover, .btn--large:hover {
     background: var(--text);
-    color: #000000;
-    transition: all 0.3s ease-out;
+    color: #fff;
 }

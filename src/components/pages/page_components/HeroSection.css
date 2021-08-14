@@ -1,0 +1,112 @@
+.hero-container{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.earth-img {
+    transition: all ease 1.25s;
+    transform: translateX(-50%);
+    opacity: 0;
+    margin-right: 5rem;
+}
+
+.earth-img.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.site-title{
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.slogan{
+    font-family: ubuntu-bold;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.content-wrapper{
+    background: #244a64;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 45rem;
+    width: 100%;
+}
+
+.text-wrapper{
+    opacity: 0;
+    transition: opacity ease 1.25s;
+    max-width: 38vw;
+}
+
+.text-wrapper.visible{
+    opacity: 1;
+}
+
+.card-div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: -5rem auto 0 auto;
+    opacity: 0.05;
+    transform: translateY(25%);
+    transition: all ease 1.25s;
+}
+
+.card-div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+@media screen and (max-width: 965px) {
+    .card-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .earth-img{
+        display: none;
+    }
+
+    .content-wrapper{
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .laptop-img{
+        width: 80vw;
+        max-width: fit-content;
+    }
+
+    .hero-container{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .earth-img{
+        display: none;
+    }
+
+    .content-wrapper{
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .laptop-img{
+        width: 80vw;
+        max-width: fit-content;
+    }
+
+    .hero-container{
+        width: 100vw;
+    }
+}

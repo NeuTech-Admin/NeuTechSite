@@ -1,11 +1,10 @@
 import React, { Fragment, useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Button } from './Button';
+import { Button } from '../Button';
 import './Navbar.css'
 
-
-function Navbar() {
+function Navbar(props) {
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -13,7 +12,7 @@ function Navbar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
     const showButton = () => {
-        if(window.innerWidth <= 1200){
+        if (window.innerWidth <= 1200) {
             setButton(false);
         } else {
             setButton(true);
@@ -27,29 +26,30 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        <img src="SiteLogo.png" className="NeuTech-Logo" alt="NeuTech Foundation"/>
+                        <img src="SiteLogo.png" className="NeuTech-Logo" alt="NeuTech Foundation" />
                     </Link>
+                    <div className="spacer" />
                     <div className="menu-icon" onClick={handleClick}>
-                        {click ? <FaTimes /> : <FaBars/>}
+                        {click ? <FaTimes /> : <FaBars />}
                         <span className="menu-text">Menu</span>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/' id={props.home} className='nav-links' onClick={closeMobileMenu}>
                                 Home
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/about-us' id={props.aboutUs} className='nav-links' onClick={closeMobileMenu}>
                                 About Us
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/intiatives' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/intiatives' id={props.intiatives} className='nav-links' onClick={closeMobileMenu}>
                                 Initiatives
                             </Link>
                         </li>
-                        <li className='nav-item'>
+                        {/* <li className='nav-item'>
                             <Link to='/e-waste' className='nav-links' onClick={closeMobileMenu}>
                                 E-Waste
                             </Link>
@@ -68,7 +68,7 @@ function Navbar() {
                             <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                                 Contact
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </nav>
