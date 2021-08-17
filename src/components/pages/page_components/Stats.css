@@ -17,12 +17,12 @@
 .stats-title{
     font-family: ubuntu-bold;
     color: #244a64;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .devices-collected{
     font-family: ubuntu-bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #244a64;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
 .countup{
     font-family: ubuntu-bold;
     color: black;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .device-stat-container {
@@ -72,4 +72,38 @@
     color: black;
     font-size: 2.5rem;
     bottom: 0;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .stats-title{
+        font-size: 2.25rem;  
+    }
+
+    .devices-collected{
+        font-size: 1.5rem;
+    }
+
+    .device-stats {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .device-countup{
+        font-size: 1.5rem;
+    }
+    
+    .laptop-img {
+        width: 4rem;
+    }
+    
+    .phone-img {
+        width: 4rem;
+    }
+    
+    .tablet-img {
+        width: 4rem;
+    }
+    
 }

@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    position: fixed;
+    position: sticky;
     background: #ffffff;
     top: 0;
     z-index: 999;
@@ -15,8 +15,8 @@
 }
 
 .NeuTech-Logo{
-    height: 80px;
-    width: max-content;
+    width: 60px;
+    margin-top: 6px;
     outline: none;
 }
 
@@ -93,10 +93,6 @@
         position: relative;
     }
 
-    .navbar-logo{
-        margin-top: -2.5rem;
-    }
-
     .nav-menu{
         display: flex;
         flex-direction: column;
@@ -135,6 +131,7 @@
 
     .navbar-logo {
         position: absolute;
+        margin-top: -2.5rem;
         top: 0;
         left: 0;
         transform: translate(25%, 50%);
@@ -144,7 +141,7 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        /* margin-right: -12.5vw; */
+        margin-right: -12.5vw;
         margin-top: 5px;
         color: #1c5c6c;
         top: 0;

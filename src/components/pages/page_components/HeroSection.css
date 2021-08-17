@@ -1,4 +1,5 @@
 .hero-container{
+    /* position: fixed; */
     display: flex;
     width: 100%;
     height: fit-content;
@@ -26,6 +27,7 @@
 .slogan{
     font-family: ubuntu-bold;
     font-size: 2rem;
+    /* max-width: 50rem; */
     color: #fff;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
@@ -66,7 +68,7 @@
     transform: translateY(0);
 }
  
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 1300px) {
     .card-div {
         display: flex;
         flex-direction: column;
@@ -76,29 +78,26 @@
         display: none;
     }
 
-    .content-wrapper{
-        padding: 2.5rem;
-        text-align: center;
+    .slogan{
+        font-size: 1.2rem;
+        width: fit-content;
     }
 
-    .laptop-img{
-        width: 80vw;
+    .site-title{
+        font-size: 3rem;
+    }
+
+    .text-wrapper{
         max-width: fit-content;
-    }
-
-    .hero-container{
-        width: 100vw;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .earth-img{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .content-wrapper{
-        padding: 2.5rem;
+        padding: 0 2.5rem;
         text-align: center;
+        height: 30rem;
     }
 
     .laptop-img{

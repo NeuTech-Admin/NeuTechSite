@@ -45,7 +45,7 @@ function Navbar(props) {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/intiatives' id={props.intiatives} className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/initiatives' id={props.intiatives} className='nav-links' onClick={closeMobileMenu}>
                                 Initiatives
                             </Link>
                         </li>

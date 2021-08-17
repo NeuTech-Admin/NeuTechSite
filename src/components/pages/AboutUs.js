@@ -6,7 +6,7 @@ import ThreeArms from './page_components/ThreeArms'
 
 function AboutUs() {
     return (
-        <div>
+        <div className="about-us">
             <Navbar aboutUs="about-us" />
             <ThreeArms />
             <Footer />

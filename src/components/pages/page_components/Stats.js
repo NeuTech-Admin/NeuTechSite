@@ -30,7 +30,7 @@ class Stats extends Component {
                                 <CountUp className="device-countup" end={250} duration={5} useEasing= {true} />
                             </div>
                             <div data-aos-once="true" data-aos="fade-left" className="device-stats">
-                                <img src="Tabletvector.png" alt="tablet" className="tablet-img" />
+                                <img src="TabletVector.png" alt="tablet" className="tablet-img" />
                                 <CountUp className="device-countup" end={250} duration={5} useEasing= {true} />
                             </div>
                         </div>
