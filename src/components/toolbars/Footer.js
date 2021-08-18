@@ -11,12 +11,12 @@ function Footer() {
                     <p className="footer-description">
                         Check out our socials to stay up to date with our initiatives
                     </p>
-                    <FaInstagram className="instagram-icon"/>
-                    <FaTwitter className="twitter-icon"/>
-                    <FaFacebook className="facebook-icon"/>
+                    <FaInstagram className="instagram-icon" />
+                    <FaTwitter className="twitter-icon" />
+                    <FaFacebook className="facebook-icon" />
                 </div>
+                <p className="footer-site-title">© 2021 NeuTech Foundation</p>
             </section>
-            <p className="footer-site-title">© 2021 NeuTech Foundation</p>
         </div>
     )
 }

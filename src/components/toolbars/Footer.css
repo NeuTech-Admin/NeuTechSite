@@ -4,15 +4,16 @@
     flex-direction: column;
     width: 100%;
     /* position: relative; */
-    height: 11.5rem;
+    height: fit-content;
     bottom: 0;
 }
 
 .footer-site-title{
     font-family: ubuntu-bold;
     color: white;
-    margin-top: 3.5rem;
+    margin-top: 3.2rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 /* 
 .contact-us{
