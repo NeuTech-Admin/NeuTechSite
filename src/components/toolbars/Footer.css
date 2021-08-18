@@ -75,3 +75,15 @@
     color: turquoise;
     transition: ease 0.25s;
 }
+
+@media screen and (max-width: 1300px) {
+
+    .footer-description{
+        font-family: ubuntu-bold;
+        color: white;
+        width: 12rem;
+        margin-left: auto;
+        font-size: 0.75rem;
+    }
+
+}

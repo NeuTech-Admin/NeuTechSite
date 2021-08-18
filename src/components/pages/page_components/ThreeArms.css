@@ -4,11 +4,12 @@
 
 .title-container {
     width: 100%;
-    height: 35rem;
+    height: 30rem;
     background-color: #244a64;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .arms-title{
@@ -16,6 +17,7 @@
     font-size: 4rem;
     color: #fff;
     opacity: 0;
+    text-align: center;
     transition: opacity ease 1.25s;
 }
 
@@ -49,7 +51,7 @@
     display: flex;
     flex-direction: row;
     text-align: end;
-    margin-left: auto;
+    margin-left: auto;   
 }
 
 .arm-img {
@@ -86,4 +88,59 @@
     color: #2c313f;
     font-size: 1.5rem;
     line-height: 2.5rem;
+}
+ 
+@media screen and (max-width: 1300px) {
+    
+    .arm-content {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1rem;
+    }
+
+    .arms {
+        width: fit-content;
+    }
+
+    .arms.second {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+    }
+    
+    .arm-img {
+        display: none;
+    }
+    
+    .arm-img.dark {
+        margin-right: 0;
+    }
+    
+    .arm-img.light {
+        margin-left: 0;
+    }
+
+    .arm-text-container {
+        width: fit-content;
+        text-align: center;
+    }
+
+    .arm-text-container.second {
+        height: fit-content;
+        margin-left: 0;
+    }
+
+    .arm-headers {
+        font-size: 1.5rem;
+    }
+
+    .arm-paragraphs{
+        font-size: 1rem;
+    }
+
 }
