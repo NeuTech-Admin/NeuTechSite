@@ -37,6 +37,15 @@
     margin-top: 2rem;
 }
 
+.footer-description-phone{
+    display: none;
+    font-family: ubuntu-bold;
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
 .instagram-icon{
     color: white;
     font-size: 1.5rem;
@@ -76,14 +85,33 @@
     transition: ease 0.25s;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
 
     .footer-description{
         font-family: ubuntu-bold;
         color: white;
-        width: 12rem;
+        width: 15rem;
         margin-left: auto;
-        font-size: 0.75rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer-description{
+        display: none;
+    }
+
+    .footer-description-phone{
+        font-family: ubuntu-bold;
+        color: white;
+        width: 12rem;
+        display: initial;
+        display: block;
+        margin-left: auto;
+        font-size: 1rem;
     }
 
 }

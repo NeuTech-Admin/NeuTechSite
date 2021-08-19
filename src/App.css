@@ -44,8 +44,8 @@ body, html {
 }
 
 @font-face {
-  font-family: ubuntu-regular;
-  src: url(./fonts/Ubuntu-Regular.ttf);
+  font-family: ubuntu-medium;
+  src: url(./fonts/Ubuntu-Medium.ttf);
 }
 
 @keyframes spinner {

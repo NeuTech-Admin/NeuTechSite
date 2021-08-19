@@ -23,7 +23,7 @@
 }
 
 .card-description{
-    font-family: ubuntu-regular;
+    font-family: ubuntu-medium;
     font-size: 1.3rem;
 }
 
@@ -57,4 +57,30 @@
 
 .card-link:hover, .card-link:hover .arrow {
     color: #44bfd2;
+}
+
+@media screen and (max-width: 1300px) {
+    .card-container{
+        height: fit-content;
+        width: fit-content;
+        margin-left: 1.075rem;
+        margin-right: 1.075rem;
+        padding: 1.5rem;
+        min-height: 15rem;
+        margin-bottom: 2rem;
+        justify-content: space-evenly;
+    }
+    
+    .card-title{
+        font-size: 1.35rem;
+    }
+
+    .card-description{
+        font-size: 1.1rem;
+        line-height: 1.25rem;
+    }
+
+    .card-link{
+        font-size: 1.3rem;
+    }
 }

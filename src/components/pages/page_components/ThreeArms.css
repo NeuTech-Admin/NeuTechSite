@@ -4,7 +4,7 @@
 
 .title-container {
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     background-color: #244a64;
     display: flex;
     justify-content: center;
@@ -33,6 +33,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
 }
 
 .arms {
@@ -44,7 +45,7 @@
 }
 
 .arms.first {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .arms.second {
@@ -80,7 +81,7 @@
     font-family: ubuntu-bold;
     font-size: 2rem;
     color: #2c313f;
-    line-height: 4rem;
+    line-height: 2.5rem;
 }
 
 .arm-paragraphs {
@@ -88,9 +89,10 @@
     color: #2c313f;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    margin-top: 1rem;
 }
  
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     
     .arm-content {
         height: fit-content;
@@ -101,6 +103,10 @@
         margin-left: 0;
         margin-right: 0;
         padding: 0 1rem;
+    }
+
+    .arms-title{
+        font-size: 3rem;
     }
 
     .arms {

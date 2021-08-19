@@ -11,6 +11,9 @@ function Footer() {
                     <p className="footer-description">
                         Check out our socials to stay up to date with our initiatives
                     </p>
+                    <p className="footer-description-phone">
+                        Check out our socials
+                    </p>
                     <FaInstagram className="instagram-icon" />
                     <FaTwitter className="twitter-icon" />
                     <FaFacebook className="facebook-icon" />
