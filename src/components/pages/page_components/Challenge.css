@@ -1,0 +1,63 @@
+.challenge-container{
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.challenge-wrapper{
+    background: #244a64;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+    flex-direction: row;
+}
+
+.using-tech{
+    width: 480px;
+    height: 300px;
+}
+
+.challenge-stats-container{
+    background: #fff;
+    display: flex;
+    height: 15rem;
+    width: 50%;
+    -moz-box-shadow: 0px 5px 150px #000000;
+    -webkit-box-shadow: 0px 5px 150px #000000;
+    box-shadow: 0px 5px 75px #000000;
+    border-top-left-radius:14px;
+    border-top-right-radius:75px;
+    border-bottom-left-radius:14px;
+    border-bottom-right-radius:75px;
+    flex-direction: column;
+    margin: -5rem auto 0 auto;
+}
+
+.mission-wrapper{
+    opacity: 0;
+    transition: opacity ease 1.25s;
+    max-width: 38vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-heading{
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0px 4px 40px #000000;
+    margin-bottom: 2rem;
+}
+
+.mission-statement{
+    font-family: ubuntu-medium;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.mission-wrapper.visible{
+    opacity: 1;
+}

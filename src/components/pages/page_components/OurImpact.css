@@ -1,0 +1,102 @@
+.impact-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #0e809cbd;
+}
+
+.impact-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.bullseye-icon{
+    font-size: 4rem;
+    align-content: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.impact-title{
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.first-event{
+    font-family: ubuntu-bold;
+    font-size: 2.25rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.stat-icon{
+    font-size: 4rem;
+    color: #44bfd2;
+    margin: 0 auto;    
+}
+
+.countup-stat{
+    font-family: ubuntu-bold;
+    color: #244a64;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.countup-stat-text{
+    font-family: ubuntu-bold;
+    color: #244a64;
+    line-height: 2.75rem;
+    font-size: 2rem;
+}
+
+.stat-desc{
+    font-family: ubuntu-bold;
+    font-size: 3rem;
+    color: #0e809cbd;
+}
+
+.impact-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.impact-desc{
+    font-family: ubuntu-medium;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.stat-card-container-one, .stat-card-container-two{
+    height: fit-content;
+    width: 25rem;
+    min-height: 17rem;
+    background-color: rgb(255, 255, 255);
+    -moz-box-shadow: 0px 5px 25px #000000;
+    -webkit-box-shadow: 0px 5px 25px #000000;
+    box-shadow: 0px 5px 25px #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: all ease 1.25s;
+}

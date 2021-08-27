@@ -28,6 +28,7 @@ class ThreeArms extends Component {
                 <div className="title-container">
                     <span className={this.state.headerText}>The Three Arms</span>
                 </div>
+                <div className="divider"/>
                 <div className="arm-content">
                     <div className="arms first">
                         <img data-aos="fade-right" data-aos-once="true" src="DarkArm.png" alt="dark arm" className="arm-img dark" />

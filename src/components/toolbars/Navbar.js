@@ -49,14 +49,14 @@ function Navbar(props) {
                                 Initiatives
                             </Link>
                         </li>
+                        <li className='nav-item'>
+                            <Link to='/support-us' id={props.supportUs} className='nav-links' onClick={closeMobileMenu}>
+                                Support Us
+                            </Link>
+                        </li>
                         {/* <li className='nav-item'>
                             <Link to='/e-waste' className='nav-links' onClick={closeMobileMenu}>
                                 E-Waste
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/support-us' className='nav-links' onClick={closeMobileMenu}>
-                                Support Us
                             </Link>
                         </li>
                         <li className='nav-item'>
