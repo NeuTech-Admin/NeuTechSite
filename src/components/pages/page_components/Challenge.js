@@ -37,16 +37,22 @@ class Challenge extends Component {
                 <div className="challenge-stats-container">
                     <div className="stat-div">
                         <span className="stat-header">Placehikder</span>
+                        <div className="header-underline" />
                         <p className="stat-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti rerum aliquam obcaecati sint iste veniam voluptatibus ex! Ea, suscipit.</p>
                     </div>
+                    <div className="stat-underline" />
                     <div className="stat-div">
                         <span className="stat-header">Placehikder</span>
+                        <div className="header-underline" />
                         <p className="stat-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sequi?</p>
                     </div>
+                    <div className="stat-underline" />
                     <div className="stat-div">
                         <span className="stat-header">Placehikder</span>
+                        <div className="header-underline" />
                         <p className="stat-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque atque, odio possimus repellat id numquam?</p>
                     </div>
+                    <div className="stat-underline" />
                 </div>
             </div>
 

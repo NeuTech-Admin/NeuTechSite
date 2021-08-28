@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { GiHealthNormal } from 'react-icons/gi'
 import { FaArchway } from 'react-icons/fa'
 import { BsPeopleFill } from 'react-icons/bs'
@@ -18,7 +18,8 @@ class OurStory extends Component {
             text: 'story-wrapper',
             card1: 'nav-card-container-one',
             card2: 'nav-card-container-two',
-            card3: 'nav-card-container-three'
+            card3: 'nav-card-container-three',
+            divider: 'div-divider'
         }
     }
 
@@ -30,7 +31,8 @@ class OurStory extends Component {
                 text: 'story-wrapper visible',
                 card1: 'nav-card-container-one visible',
                 card2: 'nav-card-container-two visible',
-                card3: 'nav-card-container-three visible'
+                card3: 'nav-card-container-three visible',
+                divider: 'div-divider visible'
             })
         }, 100);
     }
@@ -51,20 +53,23 @@ class OurStory extends Component {
                         <FaArchway className="icon"/>
                         <span className="card-title">Our Principles</span>
                         <p className="card-description">Find out more about the NT Foundation's three main objectives.</p>
-                        <Link className="nav-card-link" ><Button children="The Three Arms" buttonSize="btn--large" path='/about-us'/></Link>
+                        <Link to="three-arms" smooth="true" className="nav-card-link" ><Button children="The Three Arms" buttonSize="btn--large" path='/about-us'/></Link>
                     </div>
+                    <div className={this.state.divider} />
                     <div className={this.state.card2}>
                         <BsPeopleFill className="icon"/>
                         <span className="card-title">Who we are</span>
                         <p className="card-description">Meet the people behind the NT Foundation.</p>
                         <Link className="nav-card-link" ><Button children="Meet Us" buttonSize="btn--large" path='/about-us'/></Link>
                     </div>
+                    <div className={this.state.divider} />
                     <div className={this.state.card3}>
                         <GiHealthNormal className="icon"/>
                         <span className="card-title">Support Our Cause</span>
                         <p className="card-description">Discover ways to support our cause.</p>
                         <Link className="nav-card-link" ><Button children="Support Us" buttonSize="btn--large" path='/support-us'/></Link>
                     </div>
+                    <div className={`${this.state.divider} three`} />
                 </div>
             </div>
         )

@@ -24,7 +24,7 @@ class ThreeArms extends Component {
 
     render() {
         return (
-            <div className="arm-container">
+            <div className="arm-container" id="three-arms">
                 <div className="title-container">
                     <span className={this.state.headerText}>The Three Arms</span>
                 </div>

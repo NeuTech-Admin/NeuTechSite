@@ -46,6 +46,23 @@
     justify-content: center;
 }
 
+.div-divider {
+    height: 20rem;
+    width: 1px;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity ease 1.25s;
+    transition-delay: 1.25s;
+}
+
+.div-divider.three {
+    display: none;
+}
+
+.div-divider.visible {
+    opacity: 1;
+}
+
 .nav-card-container-one, .nav-card-container-two, .nav-card-container-three{
     height: fit-content;
     width: 25rem;
@@ -129,6 +146,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 1rem;
     }
 
     .card-container{
@@ -154,4 +172,28 @@
     .card-link{
         font-size: 1.3rem;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-card-container-one, .nav-card-container-two, .nav-card-container-three {
+        margin: 0;
+    }
+    
+    .div-divider.three {
+        display: initial;
+        display: block;
+    }
+    
+    .div-divider {
+        margin: 1rem 0;
+        width: 80%;
+        height: 1px;
+    }
+        
 }
