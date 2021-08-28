@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react'
+import Aos from 'aos'
 import React, { Component } from 'react'
 import Card from '../../Card.js'
 import './Challenge.css'
@@ -16,6 +17,7 @@ class Challenge extends Component {
 
 
     componentDidMount() {
+        Aos.init({duration: 1250})
         setTimeout(() => {
             this.setState({
                 text: 'mission-wrapper visible',
@@ -34,25 +36,25 @@ class Challenge extends Component {
                     </div>
                     <img className={this.state.usingTech} src="UsingTech.png" alt="Technology" />
                 </div>
-                <div className="challenge-stats-container">
-                    <div className="stat-div">
-                        <span className="stat-header">Placehikder</span>
+                <div data-aos="fade-up" data-aos-once="true" className="challenge-stats-container">
+                    <div data-aos-delay="500" data-aos="fade-right" data-aos-once="true" className="stat-div">
+                        <span className="stat-header">1 in 5</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti rerum aliquam obcaecati sint iste veniam voluptatibus ex! Ea, suscipit.</p>
+                        <p className="stat-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
-                    <div className="stat-underline" />
-                    <div className="stat-div">
-                        <span className="stat-header">Placehikder</span>
+                    <div data-aos-delay="500" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
+                    <div data-aos-delay="1000" data-aos="fade-up" data-aos-once="true" className="stat-div">
+                        <span className="stat-header">20%</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sequi?</p>
+                        <p className="stat-content">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
-                    <div className="stat-underline" />
-                    <div className="stat-div">
-                        <span className="stat-header">Placehikder</span>
+                    <div data-aos-delay="1000" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
+                    <div data-aos-delay="1500" data-aos="fade-left" data-aos-once="true" className="stat-div">
+                        <span className="stat-header">6.5 Million</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque atque, odio possimus repellat id numquam?</p>
+                        <p className="stat-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
                     </div>
-                    <div className="stat-underline" />
+                    <div data-aos-delay="1500" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
                 </div>
             </div>
 

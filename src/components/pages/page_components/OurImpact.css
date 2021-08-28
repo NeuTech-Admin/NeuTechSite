@@ -12,7 +12,8 @@
 .impact-text{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    align-items: center;
+    width: 100%;
 }
 
 .bullseye-icon{
@@ -61,7 +62,7 @@
 .countup-stat-text{
     font-family: ubuntu-bold;
     color: #244a64;
-    line-height: 2.75rem;
+    line-height: 3.25rem;
     font-size: 2rem;
 }
 
