@@ -60,7 +60,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
 
     .support-us-title {
         font-size: 3rem;

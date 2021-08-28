@@ -119,7 +119,7 @@
     color: #44bfd2;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     .logo-img{
         display: none;
     }

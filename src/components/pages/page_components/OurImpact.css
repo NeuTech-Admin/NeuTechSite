@@ -1,16 +1,18 @@
 .impact-container{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin: 10rem auto 0 auto;
+    width: fit-content;
+    margin: 5rem auto 0 auto;
     padding: 2rem;
     border-radius: 1rem;
     background: #0e809cbd;
+    margin-bottom: 5rem;
 }
 
 .impact-text{
     display: flex;
     flex-direction: column;
+    width: fit-content;
 }
 
 .bullseye-icon{
@@ -93,10 +95,60 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin: 0 auto 2rem auto;
+    margin: 0 1rem 2rem 1rem;
     text-align: center;
     justify-content: space-between;
     border-radius: 1rem;
     opacity: 0;
     transition: all ease 1.25s;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .bullseye-icon {
+        font-size: 3.5rem;
+    }
+
+    .impact-title{
+        font-size: 3rem;
+    }
+
+    .first-event {
+        font-size: 2rem;
+    }
+
+    .stat-card-container-one, .stat-card-container-two {
+        width: 17rem;
+        min-height: 14rem;
+    }
+
+    .stat-icon {
+        font-size: 2.5rem;
+    }
+
+    .stat-desc {
+        font-size: 2rem;
+    }
+
+    .countup-stat {
+        font-size: 2rem;
+    }
+
+    .countup-stat-text {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .impact-container {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .impact-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
