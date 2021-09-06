@@ -31,12 +31,10 @@ class Mission extends Component {
                 <div data-aos="fade-up" className="mission-content">
                     <span className="mission-title">Support Our Mission</span>
                     <p className="mission-body">
-                        To send us a message fill out the form.
-                        <br />
                         To discuss sponsorships or partnerships, contact us at:
                         <br />
                         <strong className="outreach-email">
-                            outreach@techaidbc.ca
+                            info@ntfoundation.ca
                         </strong>
                     </p>
                 </div>

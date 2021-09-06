@@ -32,27 +32,27 @@ class Challenge extends Component {
                 <div className="challenge-wrapper">
                     <div className={this.state.text}>
                         <span className="mission-heading">The Mission</span>
-                        <p className="mission-statement">As technology improves, it becomes harder for people to afford good quality devices. With more people purchasing newer products, the amount of waste produced, specifically E-Waste increases drastically. Our goal is to provide people with affordable technology and increase the quantity of waste electronics that are recycled.</p>
+                        <p className="mission-statement">Despite many consumers upgrading devices frequently, lower-income families lack access to usable technology; this is known as the digital divide. <br/><br/> Our goal is to recycle non-functioning devices to reduce E-Waste and resuse devices to provide affordable technology to assist low-income communities and families.</p>
                     </div>
                     <img className={this.state.usingTech} src="UsingTech.png" alt="Technology" />
                 </div>
                 <div data-aos="fade-up" data-aos-once="true" className="challenge-stats-container">
                     <div data-aos-delay="500" data-aos="fade-right" data-aos-once="true" className="stat-div">
-                        <span className="stat-header">1 in 5</span>
+                        <span className="stat-header">463 Million</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p className="stat-content">A third of children worldwide lack the tools needed for remote learning.</p>
                     </div>
                     <div data-aos-delay="500" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
                     <div data-aos-delay="1000" data-aos="fade-up" data-aos-once="true" className="stat-div">
-                        <span className="stat-header">20%</span>
+                        <span className="stat-header">27 Months</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <p className="stat-content">Canadian 8th graders without access to a computer are ~27 Months behind their peers.</p>
                     </div>
                     <div data-aos-delay="1000" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
                     <div data-aos-delay="1500" data-aos="fade-left" data-aos-once="true" className="stat-div">
-                        <span className="stat-header">6.5 Million</span>
+                        <span className="stat-header">$57 Billion</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                        <p className="stat-content">Worth of recoverable precious metals was dumped or burned in 2020</p> {/*https://technologyhelps.org/resources/what-is-technology-poverty/ */}
                     </div>
                     <div data-aos-delay="1500" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
                 </div>

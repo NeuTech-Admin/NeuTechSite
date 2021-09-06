@@ -40,6 +40,12 @@
     font-size: 2rem;
 }
 
+.stats-icon{
+    font-size: 5rem;
+    color: #44bfd2;
+    margin: 2.5rem;
+}
+
 .device-stat-container {
     display: flex;
     flex-direction: row;
