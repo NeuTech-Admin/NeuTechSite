@@ -2,8 +2,7 @@ import Aos from 'aos'
 import React, { Component } from 'react'
 import CountUp from 'react-countup'
 import { FaMoneyBill, FaRecycle } from 'react-icons/fa'
-import { GiBullseye, GiRecycle } from 'react-icons/gi'
-import { Link } from 'react-router-dom'
+import { GiBullseye } from 'react-icons/gi'
 import './OurImpact.css'
 
 export default class OurImpact extends Component {

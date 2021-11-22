@@ -1,0 +1,79 @@
+.upcoming-events{
+    display: flex;
+    flex-direction: column;
+    width: 48vw;
+    margin: 0 auto 0 auto;
+    align-items: center;
+}
+
+.event-header{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    color: #244a64;
+    text-align: center;
+}
+
+.workshop-desc{
+   font-family: ubuntu-bold;
+    font-size: 1.5rem;
+    color: #44bfd2;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-desc {
+    height: fit-content;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 4rem;
+    -moz-box-shadow: 0px 0px 35px #000000;
+    -webkit-box-shadow: 0px 0px 35px #000000;
+    box-shadow: 0px 0px 35px #000000;
+    border: none;
+    font-family: ubntu-medium;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #44bfd2;
+    -moz-border-radius-topleft:9px;
+    -moz-border-radius-topright:9px;
+    -moz-border-radius-bottomleft:9px;
+    -moz-border-radius-bottomright:9px;
+    -webkit-border-top-left-radius:9px;
+    -webkit-border-top-right-radius:9px;
+    -webkit-border-bottom-left-radius:9px;
+    -webkit-border-bottom-right-radius:9px;
+    border-top-left-radius:9px;
+    border-top-right-radius:9px;
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius:9px;
+}
+
+.card-div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-self: center; 
+    opacity: 0;
+    transform: translateY(25%);
+    transition: all ease 1.25s;
+}
+
+.card-div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 1200px) {
+    .card-div {
+        display: flex;
+        flex-direction: column;
+        margin-top: -2.5rem;
+    }
+}

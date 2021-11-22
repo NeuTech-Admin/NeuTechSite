@@ -1,7 +1,5 @@
-import { render } from '@testing-library/react'
 import Aos from 'aos'
 import React, { Component } from 'react'
-import Card from '../../Card.js'
 import './Challenge.css'
 
 class Challenge extends Component {
