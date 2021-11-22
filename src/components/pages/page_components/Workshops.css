@@ -55,25 +55,19 @@
     border-bottom-right-radius:9px;
 }
 
-.card-div {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    justify-self: center; 
-    opacity: 0;
-    transform: translateY(25%);
-    transition: all ease 1.25s;
-}
-
-.card-div.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 @media screen and (max-width: 1200px) {
-    .card-div {
-        display: flex;
-        flex-direction: column;
-        margin-top: -2.5rem;
+    .event-desc{
+        width: 20rem;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .event-header{
+        font-size: 2rem;
+        margin: 2rem auto 0 auto;
+    }
+
+    .upcoming-events{
+        width: 20rem;
     }
 }
