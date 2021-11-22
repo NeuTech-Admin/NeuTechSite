@@ -3,6 +3,7 @@ import Footer from '../toolbars/Footer'
 import Navbar from '../toolbars/Navbar'
 import Challenge from './page_components/Challenge'
 import OurImpact from './page_components/OurImpact'
+import IndTestimonial from './page_components/IndTestimonial'
 
 function Initiatives() {
     return (
@@ -10,6 +11,7 @@ function Initiatives() {
             <Navbar initiatives="initiatives" />
             <Challenge /> 
             <OurImpact />    
+            <IndTestimonial/>
             <br/>
             <Footer />
         </div>

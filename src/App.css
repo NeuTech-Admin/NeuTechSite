@@ -16,7 +16,8 @@ body, html {
 .intitiatives,
 .support-us,
 .volunteer,
-.contact {
+.contact,
+.events {
   min-height: 100vh;
   position: relative;
   /* margin-top: 5rem; */

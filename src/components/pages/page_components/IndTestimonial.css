@@ -1,0 +1,294 @@
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.testimonial-wrapper{
+    background: #244a64;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+    flex-direction: row;
+}
+
+.using-tech{
+    width: 480px;
+    height: 300px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: translateX(25%);
+    transition: all ease 1.25s;
+    margin-left: 1rem;
+}
+
+.using-tech.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.stat-div {
+    margin: 0 auto;
+    text-align: center;
+    width: 20rem;
+}
+
+.stat-header {
+    font-size: 2.5rem;
+    font-family: ubuntu-bold;
+    color: #000000;
+}
+
+.header-underline {
+    width: 2rem;
+    height: 0.5rem;
+    background-color: #244a64;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+
+.stat-content {
+    font-size: 1.5rem;
+    font-family: ubuntu-medium;
+    color: #000000;
+}
+
+.stat-underline {
+    display: none;
+}
+
+.stories-wrapper{
+    opacity: 0;
+    transition: opacity ease 1.25s;
+    max-width: 38vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stories-heading{
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0px 4px 40px #000000;
+    margin-bottom: 2rem;
+}
+
+.stories-statement{
+    font-family: ubuntu-medium;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.stories-wrapper.visible{
+    opacity: 1;
+}
+
+.stories-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: white;
+}
+
+.divider{
+    height: 1px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.story-desc {
+    height: fit-content;
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 4rem;
+    -moz-box-shadow: 0px 0px 35px #000000;
+    -webkit-box-shadow: 0px 0px 35px #000000;
+    box-shadow: 0px 0px 35px #000000;
+    border: none;
+    font-family: ubntu-medium;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #44bfd2;
+    -moz-border-radius-topleft:9px;
+    -moz-border-radius-topright:9px;
+    -moz-border-radius-bottomleft:9px;
+    -moz-border-radius-bottomright:9px;
+    -webkit-border-top-left-radius:9px;
+    -webkit-border-top-right-radius:9px;
+    -webkit-border-bottom-left-radius:9px;
+    -webkit-border-bottom-right-radius:9px;
+    border-top-left-radius:9px;
+    border-top-right-radius:9px;
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius:9px;
+}
+
+.title-container {
+    width: 100%;
+    height: 15rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arms-title{
+    font-family: ubuntu-bold;
+    font-size: 4rem;
+    opacity: 0;
+    text-align: center;
+    transition: opacity ease 1.25s;
+}
+
+.divider{
+    height: 1px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.arms-title.visible {
+    opacity: 1;
+}
+
+.stories-content {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+.arms {
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.story-text-container {
+    width: 70rem;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.story-headers {
+    font-family: ubuntu-bold;
+    font-size: 2rem;
+    color: #2c313f;
+    line-height: 2.5rem;
+}
+
+.story-paragraphs {
+    font-family: ubuntu-medium;
+    color: #2c313f;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    padding-left: 3rem;
+}
+ 
+@media screen and (max-width: 1000px) {
+    
+    .story-content {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1rem;
+    }
+
+    .arms-title{
+        font-size: 3rem;
+    }
+
+    .story-text-container {
+        width: fit-content;
+        text-align: center;
+    }
+    .story-headers {
+        font-size: 1.5rem;
+    }
+
+    .story-paragraphs{
+        font-size: 1rem;
+    }
+    
+    .using-tech{
+        display: none;
+    }
+
+    .stories-wrapper {
+        max-width: fit-content;
+        padding: 0 2rem;
+    }
+
+    .stories-heading {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .stories-statement {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .stat-header {
+        font-size: 2rem;
+    }
+
+    .stat-content {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    
+    .challenge-stats-container {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        margin-top: 3rem;
+        height: fit-content;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat-div {
+        margin: 2rem auto;
+    }
+
+    .stat-underline {
+        width: 85%;
+        margin: 0 auto;
+        height: 2px;
+        display: initial;
+        display: block;
+        background-color: #244a64;
+    }
+
+}
