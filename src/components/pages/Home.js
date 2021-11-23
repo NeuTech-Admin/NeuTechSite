@@ -11,7 +11,7 @@ function Home() {
         <div className="home">
             <Navbar home="home" />
             <HeroSection />
-            <Stats />
+            {/* <Stats /> */}
             <Footer />
         </div>
     )
