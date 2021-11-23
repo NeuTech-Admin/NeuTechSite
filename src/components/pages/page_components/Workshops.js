@@ -36,7 +36,7 @@ class Workshops extends Component {
                 Students will also have an opportunity to ask questions and learn about engineering at UBC.<br/><br/>We strongly encourage students bring an old computer, phone, laptop etc. 
                 that is no longer being used to the event. The student or family who brings the most devices will win an arduino nano board!</p>
                 <div className="event-card">
-                    <span className="workshop-desc">To register for the event click the link below and fill out the form.</span>
+                    <span className="workshop-desc">To register for the workshop click the link below and fill out the form.</span>
                     <Button children="Register" buttonSize="btn--large" onClick={() => window.location.href = 'https://forms.gle/kNXKzrGUWgLsh48LA'}/>
                 </div>
             </div>
