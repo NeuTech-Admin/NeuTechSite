@@ -120,7 +120,6 @@
     font-family: ubntu-medium;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
     color: #44bfd2;
     -moz-border-radius-topleft:9px;
     -moz-border-radius-topright:9px;
@@ -145,14 +144,6 @@
     align-items: center;
 }
 
-.arms-title{
-    font-family: ubuntu-bold;
-    font-size: 4rem;
-    opacity: 0;
-    text-align: center;
-    transition: opacity ease 1.25s;
-}
-
 .divider{
     height: 1px;
     width: 80%;
@@ -166,6 +157,11 @@
     opacity: 1;
 }
 
+.stories-title{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
 .stories-content {
     height: fit-content;
     width: fit-content;
@@ -177,14 +173,6 @@
     margin-bottom: 5rem;
 }
 
-.arms {
-    width: 60rem;
-    display: flex;
-    flex-direction: row;
-    margin: 2rem 0;
-    align-items: center;
-}
-
 .story-text-container {
     width: 70rem;
     padding: 1rem;
@@ -194,7 +182,7 @@
 .story-headers {
     font-family: ubuntu-bold;
     font-size: 2rem;
-    color: #2c313f;
+    color: #44bfd2;
     line-height: 2.5rem;
 }
 
@@ -206,34 +194,77 @@
     margin-top: 1rem;
     padding-left: 3rem;
 }
+
+.quote-right{
+    font-size: 2rem;
+    color: #2c313f;
+    margin-left: 62rem;
+}
+
+.quote-left{
+    font-size: 2rem;
+    color: #2c313f;
+}
  
 @media screen and (max-width: 1000px) {
     
-    .story-content {
-        height: fit-content;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0 1rem;
+    .stories-content {
+        padding: 0;
+        margin: 0rem;
+        text-align: center;
+        width: 100vw;
     }
 
-    .arms-title{
-        font-size: 3rem;
+    .divider{
+        width: 50%;
+        margin: 0;
+    }    
+
+    .stories-title{
+        width: 22rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .story-desc{
+        width: 100vw;
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 3rem;
+        -moz-box-shadow: 0px 0px 0px #000000;
+        -webkit-box-shadow: 0px 0px 0px #000000;
+        box-shadow: 0px 0px 0px #000000;
+        color: #44bfd2;
+        border-radius: 0;
+    }
+
+    .quote-right{
+        display: none;
+    }
+
+    .quote-left{
+        display: none;
     }
 
     .story-text-container {
-        width: fit-content;
-        text-align: center;
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 0;
     }
+
     .story-headers {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        width: 100vw;
+        margin: 1rem 0 1rem 0;
     }
 
     .story-paragraphs{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        width: 20rem;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        padding: 0rem;
     }
     
     .using-tech{
@@ -246,7 +277,7 @@
     }
 
     .stories-heading {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
     }
 

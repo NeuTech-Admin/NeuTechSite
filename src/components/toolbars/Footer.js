@@ -15,7 +15,7 @@ function Footer() {
                         <p className="footer-description-phone">
                             Check out our socials
                         </p>
-                        <FaInstagram className="instagram-icon" />
+                        <FaInstagram className="instagram-icon" onClick={() => window.location.href = ''}/>
                         <FaTwitter className="twitter-icon" />
                         <FaFacebook className="facebook-icon" />
                     </div>

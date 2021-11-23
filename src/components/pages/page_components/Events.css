@@ -46,36 +46,6 @@
     padding: 1rem;
 }
 
-.stat-div {
-    margin: 0 auto;
-    text-align: center;
-    width: 20rem;
-}
-
-.stat-header {
-    font-size: 2.5rem;
-    font-family: ubuntu-bold;
-    color: #000000;
-}
-
-.header-underline {
-    width: 2rem;
-    height: 0.5rem;
-    background-color: #244a64;
-    border-radius: 1rem;
-    margin: 1rem auto;
-}
-
-.stat-content {
-    font-size: 1.5rem;
-    font-family: ubuntu-medium;
-    color: #000000;
-}
-
-.stat-underline {
-    display: none;
-}
-
 .mission-wrapper{
     opacity: 0;
     transition: opacity ease 1.25s;
@@ -122,15 +92,6 @@
         font-size: 1.3rem;
         text-align: center;
     }
-
-    .stat-header {
-        font-size: 2rem;
-    }
-
-    .stat-content {
-        font-size: 1rem;
-    }
-
 }
 
 @media screen and (max-width: 750px) {

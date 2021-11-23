@@ -32,13 +32,13 @@ class Testimonial extends Component {
             <div>
                 <div className="stories-container" id="three-arms">
                     <div className="story-desc">
-                        <span style={{marginBottom: '3rem'}}><strong>Read what community members have to say about us</strong></span>
+                        <span className="stories-title"><strong>Read what community members have to say about us</strong></span>
                         <div className="stories-content">
                         <div className="divider"/>
                         <div data-aos="fade-left" data-aos-once="true" className="story-text-container">
-                            <p className="story-headers" style={{color: '#44bfd2', fontSize: '2rem'}}>To NeuTech Foundation, </p>
+                            <p className="story-headers" >To NeuTech Foundation, </p>
                             <br/>
-                            <FaQuoteLeft style={{fontSize:"2rem", color: "#2c313f"}}/>
+                            <FaQuoteLeft className="quote-left"/>
                             <p className="story-paragraphs">This past year our family has had to adjust to a new normal. Our youngest child, who is 2.5 years old, requires therapy and specialized services to assist with his special needs.</p>
                             <br/> 
                             <p className="story-paragraphs">Especially during the COVID-19 pandemic, many of his doctor and specialist appointments have been conducted over zoom, or at the very least arranged via email.</p>
@@ -49,10 +49,10 @@ class Testimonial extends Component {
                             <br/> 
                             <p className="story-paragraphs">This computer really has changed so much for our family.</p><p className="story-paragraphs">We are so incredibly grateful for this gift.</p>
                             <br/> 
-                            <p className="story-paragraphs">Thank you for making a difference.<FaQuoteRight style={{fontSize:"2rem", color: "#2c313f", marginLeft:"62rem"}}/></p>
+                            <p className="story-paragraphs">Thank you for making a difference.<FaQuoteRight className="quote-right"/></p>
                             
                             <br/><br/>
-                            <p style={{fontSize: '2rem', paddingLeft:"3rem"}}> <strong>- The Bradley's</strong></p>
+                            <p className="story-headers"> <strong>- The Bradley's</strong></p>
                             <br/> 
                         </div>
                     </div>

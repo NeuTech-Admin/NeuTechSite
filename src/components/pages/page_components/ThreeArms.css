@@ -107,8 +107,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
-        margin-right: 0;
+        justify-content: center;
+        margin: 0 auto 0 auto;
         padding: 0 1rem;
     }
 
@@ -117,13 +117,13 @@
     }
 
     .arms {
-        width: fit-content;
+        width: 20rem;
     }
 
     .arms.second {
-        display: flex;
-        flex-direction: row;
-        text-align: start;
+        width: 20rem;
+        margin-left: 0;
+        justify-content: center;
     }
     
     .arm-img {
