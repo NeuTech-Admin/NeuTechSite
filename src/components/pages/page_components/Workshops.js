@@ -34,7 +34,7 @@ class Workshops extends Component {
                 <p className="event-desc">During the collection event, Seaquam students are invited to participate in an engineering workshop. 
                 UBC Engineering students will guide attendees through various activities such as building basic circuits, using arduino boards and recognizing computer hardware. 
                 Students will also have an opportunity to ask questions and learn about engineering at UBC.<br/><br/>We strongly encourage students bring an old computer, phone, laptop etc. 
-                that is no longer being used to the event. The student or family who bring the most devices will win an arduino nano board!</p>
+                that is no longer being used to the event. The student or family who brings the most devices will win an arduino nano board!</p>
                 <div className="event-card">
                     <span className="workshop-desc">To register for the event click the link below and fill out the form.</span>
                     <Button children="Register" buttonSize="btn--large" onClick={() => window.location.href = 'https://forms.gle/kNXKzrGUWgLsh48LA'}/>
