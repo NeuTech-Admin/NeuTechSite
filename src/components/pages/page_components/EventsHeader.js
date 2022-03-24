@@ -30,8 +30,15 @@ class EventsHeader extends Component {
                 <div className="events-wrapper">
                     <div className={this.state.text}>
                         <span className="mission-heading">Electronics Collection</span>
-                        <p className="mission-statement">This Saturday, Novemeber 27th from 12:00 - 4:00 pm, we will be set up in front of Seaquam to collect electronics curbside. Accepted electronics include computers, laptops, phones, tablets and computer peripherals
-                        <br/><br/>Non-functioning electronics will be recycled to reduce E-Waste while functioning electronics will be donated to low-income families and communities</p>
+                        <p className="mission-statement">
+                            This Saturday, Novemeber 27th from 12:00 - 4:00 pm, we will be set up in front of Seaquam to 
+                            collect electronics curbside. Accepted electronics include computers, laptops, phones, tablets 
+                            and computer peripherals
+                            <br/>
+                            <br/>
+                            Non-functioning electronics will be recycled to reduce E-Waste while functioning electronics 
+                            will be donated to low-income families and communities
+                        </p>
                     </div>
                     <img className={this.state.usingTech} src="Events.png" alt="Events" />
                 </div>

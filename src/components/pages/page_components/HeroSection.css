@@ -47,6 +47,7 @@
     opacity: 0;
     transition: opacity ease 1.25s;
     max-width: 38vw;
+    float: right;
 }
 
 .text-wrapper.visible{
