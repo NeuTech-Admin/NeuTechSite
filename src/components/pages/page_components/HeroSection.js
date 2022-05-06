@@ -39,7 +39,7 @@ class HeroSection extends Component {
                     </div>
                 </div>
                 <div className={this.state.card}>
-                    <Card title="Upcoming Events" description="Our next event is on Saturday, November 27th from 12 - 4 pm at Seaquam Secondary school" path="/events" link="Find out More" />
+                    <Card title="Our Initiatives" description="See the progress that NTFoundation has made and what we have done in the community." path="/initiatives" link="Find out More" />
                     <Card title="Learn More About Us" description="Learn about why we do what we do. Understand the true purpose of the NTFoundation through our three core principles." path="/about-us" link="Learn More About Us" />
                 </div>
             </div>
