@@ -8,7 +8,7 @@ import Workshops from './page_components/Workshops'
 function Events() {
     return (
         <div className="events">
-            <Navbar />
+            <Navbar events="events"/>
             <EventsHeader />
             <Workshops />
             <Footer />

@@ -16,7 +16,7 @@ function App() {
         <Route path="/about-us" exact component={AboutUs} />
         <Route path="/initiatives" exact component={Initiatives}/>
         <Route path="/support-us" exact component={SupportUs}/>
-        <Route path="/events" exact component={Events}/>
+        {/* <Route path="/events" exact component={Events}/> */}
       </Switch>
     </BrowserRouter>
   );
