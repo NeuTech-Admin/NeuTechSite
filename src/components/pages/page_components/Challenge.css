@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     background: white;
+    color: #2585BB;
 }
 
 .challenge-wrapper{
-    background: #244a64;
+    background: white;
     display: flex;
     align-self: center;
     align-items: center;
@@ -16,9 +17,7 @@
 }
 
 .using-tech{
-    width: 480px;
-    height: 300px;
-    border-radius: 1rem;
+    width: 800px;
     opacity: 0;
     transform: translateX(25%);
     transition: all ease 1.25s;
@@ -30,21 +29,6 @@
     transform: translateX(0);
 }
 
-.challenge-stats-container{
-    background: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: fit-content;
-    width: 80%;
-    min-height: 14rem;
-    -moz-box-shadow: 0px 5px 150px #000000;
-    -webkit-box-shadow: 0px 5px 150px #000000;
-    box-shadow: 0px 5px 75px #000000;
-    border-radius: 14px 75px 75px 14px;
-    margin: -4rem auto 0 auto;
-    padding: 1rem;
-}
 
 .stat-div {
     margin: 0 auto;
@@ -84,18 +68,17 @@
     flex-direction: column;
 }
 
-.mission-heading{
-    font-family: ubuntu-bold;
+.init-mission-heading{
+    font-family: nunito-black;
     font-size: 4rem;
-    color: #fff;
-    text-shadow: 0px 4px 40px #000000;
+    color: #2585BB;
     margin-bottom: 2rem;
 }
 
-.mission-statement{
-    font-family: ubuntu-medium;
-    font-size: 1.5rem;
-    color: #fff;
+.init-mission-statement{
+    font-family: nunito-extra-bold;
+    font-size: 1.6rem;
+    color: #2585BB;
 }
 
 .mission-wrapper.visible{

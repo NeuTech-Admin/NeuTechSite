@@ -6,47 +6,87 @@
     flex-direction: column;
 }
 
-.earth-img {
-    transition: all ease 1.25s;
-    transform: translateX(-50%);
+.recogair {
+    transition: all ease 1.5s;
+    transform: translateX(50%);
     opacity: 0;
-    margin-right: 5rem;
+    width: fit-content;
+    height: 30rem;
 }
 
-.earth-img.visible {
+.recogair.visible {
     transform: translateX(0);
     opacity: 1;
 }
 
-.site-title{
-    font-family: ubuntu-bold;
-    font-size: 4rem;
-    color: #fff;
+.community {
+    transition: all ease 2s;
+    transform: translateX(-50%);
+    opacity: 0;
+    width: fit-content;
+    height: 27rem;
+    margin-right: 7.5rem;
+}
+
+.community.visible {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .slogan{
-    font-family: ubuntu-bold;
-    font-size: 2rem;
-    /* max-width: 50rem; */
-    color: #fff;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    font-family: nunito-black;
+    font-size: 3.25rem;
+    color: #2585BB;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
+.init-title{
+    font-family: nunito-extra-bold;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.init-desc{
+    font-family: nunito-black;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.learn-title{
+    font-family: nunito-extra-bold;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #2585BB;
+}
+
+.learn-desc{
+    font-family: nunito-black;
+    font-size: 1.7rem;
+    color: #2585BB;
+    margin-bottom: 3rem;
+}
+
+
 .content-wrapper{
-    background: #244a64;
+    background: #fff;
     display: flex;
-    align-self: center;
     align-items: center;
     justify-content: center;
-    height: 45rem;
+    height: 35rem;
     width: 100%;
 }
 
 .text-wrapper{
+    display: flex;
+    flex-direction: column;
     opacity: 0;
+    align-items: center;
     transition: opacity ease 1.25s;
     max-width: 38vw;
+    margin-top: -2rem;
     float: right;
 }
 
@@ -54,34 +94,148 @@
     opacity: 1;
 }
 
-.card-div {
+.text_initiatives{
     display: flex;
-    flex-direction: row;
-    width: fit-content;
-    margin: -4rem auto 0 auto;  
+    flex-direction: column;
     opacity: 0;
-    transform: translateY(25%);
-    transition: all ease 1.25s;
+    align-items: center;
+    transition: opacity ease 1.25s;
+    max-width: 38vw;
+    margin-top: -2rem;
+    float: right;
 }
 
-.card-div.visible {
+.init-text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-text-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_initiatives.visible{
     opacity: 1;
-    transform: translateY(0);
+}
+
+.bubbles{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -5rem;
+    margin-top: -8rem;
+    opacity: 0;
+    transition: all ease 1.5s;
+    transform: translateY(150%);
+}
+
+.bubbles.visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.left-bubbles{
+    transition: all ease 2s;
+}
+
+.right-bubbles{
+    margin-left: auto;
+    transform: scale(-1, 1);
+}
+
+.wave {
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #2585BB;
+}
+
+.wave-bottom {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.4px);
+    height: 154px;
+    transform: rotateY(180deg);
+}
+
+.wave-bottom .shape-fill {
+    fill: #2585BB;
+}
+
+.wave-content {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2585BB;
+}
+
+.wave-content .shape-fill{
+    fill: #2585BB;
+}
+
+.ntlogo{
+    transition: all ease 3s;
+    transform: translateX(50%);
+    opacity: 0;
+    width: fit-content;
+    height: 25rem;
+    margin-top: -5rem;
+    margin-left: 6rem;
+}
+
+.ntlogo.visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.learn-about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+}
+
+.learn{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    align-items: center;
+    transition: opacity ease 1.25s;
+    max-width: 38vw;
+    margin-top: -2rem;
+}
+
+.learn.visible{
+    opacity: 1;
 }
 
 @media screen and (max-width: 1200px) {
-    .card-div {
-        display: flex;
-        flex-direction: column;
-        margin-top: -2.5rem;
-    }
-
-    .earth-img{
-        display: none;
-    }
 
     .slogan{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         width: fit-content;
     }
 
@@ -98,8 +252,9 @@
 
     .content-wrapper{
         padding: 0 2.5rem;
+        margin: 4rem 0;
         text-align: center;
-        height: 30rem;
+        height: fit-content;
     }
 
     .laptop-img{
@@ -109,5 +264,78 @@
 
     .hero-container{
         width: 100vw;
+    }
+
+    .wave-content {
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: fit-content;
+        max-width: 100%;
+        width: 100vw;
+    }
+
+    .text_initiatives {
+        max-width: fit-content;
+    }
+
+    .community {
+        height: 16rem;
+        margin: 2rem auto;
+    }
+    
+    .init-text-wrapper {
+        max-width: fit-content;
+    }
+
+    .init-title {
+        font-size: 2.5rem;
+    }
+
+    .init-desc {
+        font-size: 1.5rem;
+        max-width: fit-content;
+    }
+
+    .ntlogo {
+        display: none;
+    }
+
+    .learn-about-us {
+        width: 100%;
+        margin: 5rem auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .learn {
+        max-width: fit-content;
+    }
+
+    .learn-text-wrapper {
+        width: fit-content;
+    }
+
+    .learn-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    .recogair{
+        display: none;
+    }
+
+    .bubbles {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .right-bubbles {
+        display: none;
     }
 }

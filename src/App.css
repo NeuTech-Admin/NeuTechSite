@@ -17,7 +17,8 @@ body, html {
 .support-us,
 .volunteer,
 .contact,
-.events {
+.events,
+.three-arms {
   min-height: 100vh;
   position: relative;
   /* margin-top: 5rem; */
@@ -47,6 +48,21 @@ body, html {
 @font-face {
   font-family: ubuntu-medium;
   src: url(./fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+  font-family: nunito-black;
+  src: url(./fonts/Nunito-Black.ttf);
+}
+
+@font-face {
+  font-family: nunito-extra-bold;
+  src: url(./fonts/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: nunito-bold;
+  src: url(./fonts/Nunito-Bold.ttf);
 }
 
 @keyframes spinner {

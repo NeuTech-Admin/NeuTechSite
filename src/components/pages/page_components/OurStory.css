@@ -1,6 +1,7 @@
 .story-container{
-    background: #244a64;
+    background: #fff;
     display: flex;
+    flex-direction: column;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -21,7 +22,6 @@
     transition: all ease 1.25s;
     transform: translateX(50%);
     opacity: 0;
-    margin-right: 5rem;
 }
 
 .logo-img.visible {
@@ -42,32 +42,14 @@
 .nav-card{
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
+    margin-top: 2rem;
     justify-content: center;
-}
-
-.div-divider {
-    height: 20rem;
-    width: 1px;
-    background-color: #000000;
-    opacity: 0;
-    transition: opacity ease 1.25s;
-    transition-delay: 1.25s;
-}
-
-.div-divider.three {
-    display: none;
-}
-
-.div-divider.visible {
-    opacity: 1;
 }
 
 .nav-card-container-one, .nav-card-container-two, .nav-card-container-three{
     height: fit-content;
     width: 25rem;
     min-height: 20rem;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -84,7 +66,7 @@
 }
 
 .nav-card-container-two{
-    transform: translateY(50%);
+    transform: translateY(30%);
 }
 
 .nav-card-container-three {
@@ -102,39 +84,294 @@
 }
 
 .card-title{
-    font-family: ubuntu-bold;
-    color: #244a64;
-    font-size: 1.9rem;
+    font-family: nunito-extra-bold;
+    color: #ffffff;
+    font-size: 2.5rem;
 }
 
 .card-description{
-    font-family: ubuntu-medium;
+    font-family: nunito-extra-bold;
     font-size: 1.5rem;
+    color: #ffffff;
 }
 
 .icon{
-    font-size: 3.5rem;
-    color: #44bfd2;
+    font-size: 4rem;
+    color: #ffffff;
     margin: 0 auto;    
 }
 
 .nav-card-link {
-    font-family: ubuntu-bold;
-    text-decoration: none;
-    color: #244a64;
-    font-size: 1.8rem;
-    transition: all 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     margin-top: 2rem;
-    width: fit-content;
-    outline: none;
 }
 
-.card-link:hover, .card-link:hover .arrow {
-    color: #44bfd2;
+.motto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5rem;
+    color: #2585BB;
 }
+
+.reuse{
+    font-family: nunito-black;
+    margin-right: 2rem;
+    transition: all ease 2s;
+    transform: translateX(-80%);
+    opacity: 0;
+}
+
+.reduce{
+    margin-right: 2rem;
+    font-family: nunito-black;
+    transition: all ease 2s;
+    transform: translateY(80%);
+    opacity: 0;
+}
+
+.renew{
+    font-family: nunito-black;
+    transition: all ease 2s;
+    transform: translateX(80%);
+    opacity: 0;
+}
+
+.reuse.visible{
+    font-family: nunito-black;
+    margin-right: 2rem;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.reduce.visible{
+    margin-right: 2rem;
+    font-family: nunito-black;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.renew.visible{
+    font-family: nunito-black;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.stacked-div-bottom {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: 5rem;
+}
+
+.stacked-div-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 108px;
+}
+
+.stacked-div-bottom .shape-fill {
+    fill: #2585BB;
+}
+
+.stacked-div-top{
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 12rem;
+    transform: rotate(180deg);
+}
+
+.stacked-div-top svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 108px;
+}
+
+.stacked-div-top .shape-fill{
+    fill: #2585BB;
+}
+
+.stacked-div-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    background-color: #2585BB;
+}
+.about-wave {
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.about-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.about-wave .shape-fill {
+    fill: #2585BB;
+}
+
+.about-wave-bottom {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.about-wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.4px);
+    height: 154px;
+    transform: rotateY(180deg);
+}
+
+.about-wave-bottom .shape-fill {
+    fill: #2585BB;
+}
+
+.about-wave-content {
+    width: 100%;
+    height: 37rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2585BB;
+}
+
+.about-wave-content .shape-fill{
+    fill: #2585BB;
+}
+
+.mission-desc{
+    font-family: nunito-black;
+    font-size: 2.25rem;
+    color: #fff;
+    width: 50rem;
+    margin-bottom: 3rem;
+}
+
+.recycle{
+    height: 20rem;
+    margin-left: 5rem;
+}
+
+.about-bubbles{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -5rem;
+    margin-top: -8rem;
+    opacity: 0;
+    margin-top: 1rem;
+    transition: all ease 1.5s;
+    transform: translateY(150%);
+}
+
+.about-bubbles.visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.about-left-bubbles{
+    transition: all ease 2s;
+}
+
+.about-right-bubbles{
+    margin-left: auto;
+    transform: scale(-1, 1);
+}
+
+.text-initiatives{
+    transition: all ease 1s;
+    opacity: 0;
+}
+
+.btn-text-initiatives{
+    margin: 0 auto;
+}
+
+.text-initiatives.visible{
+    opacity: 1;
+}
+
+.testimony-prev-card{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 25rem;
+    margin: 0 auto;
+    border: 4px solid #dddddd;
+    box-shadow: -11px -9px 1px 2px rgba(223, 241, 249, 1);
+    border-top: #858585;
+    border-left: #858585;
+    padding: 2rem 2rem 0rem 2rem;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all ease 2s;
+}
+
+.testimony-prev-card.visible{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.testimony-desc {
+    font-size: 2rem;
+    font-family: nunito-black;
+    text-align: center;
+    margin: 0 auto;
+    width: 35rem;
+    color: #2FB7F1;
+}
+
+.testimony-quote{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #2FB7F1;
+}
+
+.testimony-prev{
+    font-size: 1.5rem;
+    color: #2FB7F1;
+    font-family: nunito-extra-bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.testimony-page-btn, .testimony-page-btn-link{
+    margin-left: auto;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border: 0px;
+    padding-top: 0.2rem;
+}
+
+.testimony-page-btn{
+    box-shadow: 0px 0px 5px rgb(110, 110, 110);
+    border-radius: 3rem;
+    color: white;
+    background-color: #2FB7F1;
+}
+
+.testimony-page-btn:hover{
+    color: #2FB7F1;
+    transition: all ease .6s;
+    background-color: white;
+}
+.testimony-btn-arrow{
+    font-size: 1.7rem;
+}
+
 
 @media screen and (max-width: 1200px) {
     .logo-img{

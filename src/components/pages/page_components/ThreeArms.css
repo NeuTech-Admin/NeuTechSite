@@ -12,19 +12,20 @@
 }
 
 .arms-title{
-    font-family: ubuntu-bold;
+    font-family: nunito-black;
     font-size: 4rem;
     opacity: 0;
+    color: #165375;
     text-align: center;
     transition: opacity ease 1.25s;
 }
 
 .divider{
-    height: 1px;
+    height: 2px;
     width: 60%;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #165375;
     margin: 0 auto;
 }
 
@@ -67,7 +68,7 @@
 }
 
 .arm-img.dark {
-    color: #244a64;
+    color: #165375;
     margin-right: 5rem;
 }
 
@@ -85,15 +86,15 @@
 }
 
 .arm-headers {
-    font-family: ubuntu-bold;
+    font-family: nunito-extra-bold;
     font-size: 2rem;
-    color: #2c313f;
+    color: #165375;
     line-height: 2.5rem;
 }
 
 .arm-paragraphs {
-    font-family: ubuntu-medium;
-    color: #2c313f;
+    font-family: nunito-bold;
+    color: #165375;
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin-top: 1rem;

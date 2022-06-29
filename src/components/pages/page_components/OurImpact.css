@@ -5,7 +5,7 @@
     margin: 5rem auto 0 auto;
     padding: 2rem;
     border-radius: 1rem;
-    background: #0e809cbd;
+    background: #2585BB;
     margin-bottom: 5rem;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .impact-title{
-    font-family: ubuntu-bold;
+    font-family: nunito-extra-bold;
     font-size: 4rem;
     text-align: center;
     color: white;
@@ -32,7 +32,7 @@
 }
 
 .first-event{
-    font-family: ubuntu-bold;
+    font-family: nunito-extra-bold;
     font-size: 2.25rem;
     text-align: center;
     color: white;
@@ -48,28 +48,28 @@
 
 .stat-icon{
     font-size: 4rem;
-    color: #44bfd2;
+    color: #2585BB;
     margin: 0 auto;    
 }
 
 .countup-stat{
-    font-family: ubuntu-bold;
-    color: #244a64;
+    font-family: nunito-extra-bold;
+    color: #2585BB;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .countup-stat-text{
-    font-family: ubuntu-bold;
-    color: #244a64;
+    font-family: nunito-extra-bold;
+    color: #2585BB;
     line-height: 3.25rem;
     font-size: 2rem;
 }
 
 .stat-desc{
-    font-family: ubuntu-bold;
+    font-family: nunito-extra-bold;
     font-size: 3rem;
-    color: #0e809cbd;
+    color: #2585BB;
 }
 
 .impact-stats{
@@ -79,7 +79,7 @@
 }
 
 .impact-desc{
-    font-family: ubuntu-medium;
+    font-family: nunito-bold;
     font-size: 1.5rem;
     color: white;
     text-align: center;
@@ -90,9 +90,7 @@
     width: 25rem;
     min-height: 17rem;
     background-color: rgb(255, 255, 255);
-    -moz-box-shadow: 0px 5px 25px #000000;
-    -webkit-box-shadow: 0px 5px 25px #000000;
-    box-shadow: 0px 5px 25px #000000;
+    box-shadow: 0px 0px 8px rgb(88, 88, 88);
     display: flex;
     flex-direction: column;
     padding: 1rem;

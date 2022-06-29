@@ -11,7 +11,6 @@ function Initiatives() {
             <Navbar initiatives="initiatives" />
             <Challenge /> 
             <OurImpact />    
-            <IndTestimonial/>
             <br/>
             <Footer />
         </div>

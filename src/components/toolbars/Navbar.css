@@ -9,14 +9,14 @@
     background: #ffffff;
     top: 0;
     z-index: 999;
-    -moz-box-shadow: 3px 5px 10px #000000;
-    -webkit-box-shadow: 3px 5px 10px #000000;
-    box-shadow: 3px 5px 10px #000000;
+    -moz-box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #858585;
 }
 
 .NeuTech-Logo{
-    width: 60px;
-    margin-top: 6px;
+    margin: auto;
+    width: 170px;
     outline: none;
 }
 
@@ -25,7 +25,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:#1c5c6c;
+    color:#1E80AA;
     height: 80px;
     max-width: 1500px;
 }
@@ -40,6 +40,10 @@
     display: flex;
     align-items: center;
     outline: none;
+}
+
+.NeuTech-Logo.textless {
+    display: none;
 }
 
 .nav-menu{
@@ -57,7 +61,7 @@
 }
 
 .nav-links {
-    color: #1c5c6c;
+    color: #2FB7F1;
     display: flex;
     font-family: ubuntu-bold;
     align-items: center;
@@ -69,11 +73,13 @@
 }
 
 .nav-links:hover{
-    border-bottom: 4px solid #1c5c6c;
+    border-bottom: 4px solid #1E80AA;
+    color: #1E80AA;
 }
 
 #home, #about-us, #initiatives, #support-us, #events {
-    border-bottom: 4px solid #1c5c6c;
+    border-bottom: 4px solid #1E80AA;
+    color: #1E80AA;
 }
 
 .fa-bars{
@@ -87,7 +93,8 @@
 .menu-icon{
     display: none;
 }
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px) {
 
     .NavbarItems {
         position: relative;
@@ -132,10 +139,8 @@
 
     .navbar-logo {
         position: absolute;
-        margin-top: -2.5rem;
-        top: 0;
         left: 0;
-        transform: translate(25%, 50%);
+        transform: translateX(25%);
     }
 
     .menu-icon{
@@ -185,4 +190,25 @@
         color: #242424;
         transition: 250ms;
     }
+}
+
+@media screen and (max-width: 450px) {
+
+    .NeuTech-Logo {
+        display: none;
+    }
+
+    .NeuTech-Logo.textless {
+        display: inherit;
+        width: 4rem;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    .menu-icon {
+        margin: 0;
+    }
+
 }

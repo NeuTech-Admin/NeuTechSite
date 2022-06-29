@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { Button } from '../Button';
@@ -27,6 +27,7 @@ function Navbar(props) {
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
                         <img src="SiteLogo.png" className="NeuTech-Logo" alt="NeuTech Foundation" />
+                        <img src="SiteLogoTextless.png" className="NeuTech-Logo textless" alt="NeuTech Foundation" />
                     </Link>
                     <div className="spacer" />
                     <div className="menu-icon" onClick={handleClick}>

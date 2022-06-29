@@ -4,7 +4,7 @@
 
 .support-us-header {
     height: 20rem;
-    background: #244a64;
+    background: #2585BB;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
 
 .support-us-title {
     color: #ffffff;
-    font-family: ubuntu-bold;
+    font-family: nunito-black;
     font-size: 4rem;
     opacity: 0;
     transition: opacity ease 1.25s;
@@ -23,8 +23,8 @@
 }
 
 .mission-content {
-    font-family: ubuntu-bold;
-    color: #3e69dc;
+    font-family: nunito-extra-bold;
+    color: #2585BB;
     width: fit-content;
     margin: 10rem auto;
     opacity: 0;
@@ -38,17 +38,17 @@
 }
 
 .mission-title {
-    font-family: ubuntu-bold;
-    color: #000;
+    font-family: nunito-extra-bold;
+    color: #2585BB;
     font-size: 3rem;
 }
 
 .mission-body {
     margin-top: 1rem;
     line-height: 2rem;
-    font-size: 1.5rem;
-    font-family: ubuntu-medium;
-    color: #3e69dc;
+    font-size: 1.75rem;
+    font-family: nunito-bold;
+    color: #2585BB;
 }
 
 .outreach-email {

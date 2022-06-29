@@ -29,12 +29,12 @@ class Challenge extends Component {
             <div className="challenge-container">
                 <div className="challenge-wrapper">
                     <div className={this.state.text}>
-                        <span className="mission-heading">The Mission</span>
-                        <p className="mission-statement">Despite many consumers upgrading devices frequently, lower-income families lack access to usable technology; this is known as the digital divide. <br/><br/> Our goal is to recycle non-functioning devices to reduce E-Waste and resuse devices to provide affordable technology to assist low-income communities and families.</p>
+                        <span className="init-mission-heading">The Mission</span>
+                        <p className="init-mission-statement">Despite many consumers upgrading devices frequently, lower-income families lack access to usable technology; this is known as the digital divide. <br/><br/> Our goal is to recycle non-functioning devices to reduce E-Waste and resuse devices to provide affordable technology to assist low-income communities and families.</p>
                     </div>
-                    <img className={this.state.usingTech} src="UsingTech.png" alt="Technology" />
+                    <img className={this.state.usingTech} src="goals.jpg" alt="Goals" />
                 </div>
-                <div data-aos="fade-up" data-aos-once="true" className="challenge-stats-container">
+                {/* <div data-aos="fade-up" data-aos-once="true" className="challenge-stats-container">
                     <div data-aos-delay="500" data-aos="fade-right" data-aos-once="true" className="stat-div">
                         <span className="stat-header">463 Million</span>
                         <div className="header-underline" />
@@ -50,10 +50,10 @@ class Challenge extends Component {
                     <div data-aos-delay="1500" data-aos="fade-left" data-aos-once="true" className="stat-div">
                         <span className="stat-header">$57 Billion</span>
                         <div className="header-underline" />
-                        <p className="stat-content">Worth of recoverable precious metals was dumped or burned in 2020</p> {/*https://technologyhelps.org/resources/what-is-technology-poverty/ */}
+                        <p className="stat-content">Worth of recoverable precious metals was dumped or burned in 2020</p> {/*https://technologyhelps.org/resources/what-is-technology-poverty/
                     </div>
                     <div data-aos-delay="1500" data-aos="fade-in" data-aos-once="true" className="stat-underline" />
-                </div>
+                </div> */}
             </div>
 
         )
