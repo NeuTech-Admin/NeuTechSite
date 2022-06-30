@@ -35,8 +35,6 @@ class OurStory extends Component {
             this.setState({
                 logoImg: 'logo-img visible',
                 reuse: 'reuse visible',
-                reduce: 'reduce visible',
-                renew: 'renew visible',
                 recycle: 'recycle visible',
                 bubbles: 'about-bubbles visible',
                 text_initiatives: 'text-initiatives visible',
@@ -47,6 +45,16 @@ class OurStory extends Component {
                 divider: 'div-divider visible'
             })
         }, 100);
+        setTimeout(() => {
+            this.setState({
+                reduce: 'reduce visible'
+            })
+        }, 500);
+        setTimeout(() => {
+            this.setState({
+                renew: 'renew visible'
+            })
+        }, 1000);
     }
 
     render() {

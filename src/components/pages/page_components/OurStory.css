@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     margin-bottom: 2rem;
     text-align: center;
     justify-content: space-between;
@@ -296,6 +296,7 @@
 }
 
 .btn-text-initiatives{
+    width: fit-content;
     margin: 0 auto;
 }
 
@@ -368,15 +369,33 @@
     transition: all ease .6s;
     background-color: white;
 }
+
 .testimony-btn-arrow{
     font-size: 1.7rem;
 }
 
+@media screen and (max-width: 1300px) {
+    .about-wave-content {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .mission-desc {
+        width: fit-content;
+    }
+
+    .recycle.visible {
+        margin: 3rem 0 0 0;
+    }
+}
 
 @media screen and (max-width: 1200px) {
-    .logo-img{
+    /* .logo-img{
         display: none;
-    }
+    } */
 
     .story-wrapper{
         max-width: fit-content;
@@ -398,12 +417,14 @@
     }
     
     .card-title{
-        font-size: 1.35rem;
+        font-size: 2rem;
     }
 
     .card-description{
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         line-height: 1.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .card-link{
@@ -411,7 +432,34 @@
     }
 }
 
+@media screen and (max-width: 1180px) {
+    .nav-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stacked-div-content {
+        height: fit-content;
+    }
+}
+
 @media screen and (max-width: 900px) {
+
+    .story-container {
+        margin-top: 6rem;
+    }
+
+    .motto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reuse.visible, .reduce.visible {
+        margin: 0;
+    }
+
     .nav-card {
         display: flex;
         flex-direction: column;
@@ -432,5 +480,77 @@
         width: 80%;
         height: 1px;
     }
+
+    
+    .testimony-prev-card {
+        width: fit-content;
+        height: fit-content;
+        margin: 0 1.5rem;
+        padding: 2rem;
+        /* border: 4px solid #dddddd;
+        box-shadow: -11px -9px 1px 2px rgba(223, 241, 249, 1);
+        border-top: #858585;
+        border-left: #858585;
+        padding: 2rem 2rem 0rem 2rem;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: all ease 2s; */
+    }
         
+}
+
+@media screen and (max-width: 750px) {
+
+    .story-container {
+        margin: 0 0 -10rem 0;
+    }
+
+    .logo-img {
+        width: 15rem;
+    }
+
+    .reuse.visible, .reduce.visible, .renew.visible {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-right-bubbles {
+        display: none;
+    }
+
+    .about-left-bubbles {
+        margin: 0 auto;
+    }
+
+    .testimony-desc {
+        font-size: 1.75rem;
+        width: fit-content;
+    }
+
+    .testimony-quote {
+        font-size: 2rem;
+    }
+
+    .testimony-prev {
+        font-size: 1.15rem;
+        width: fit-content;
+    }
+
+    .testimony-page-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .testimony-btn-arrow {
+        font-size: 2rem;
+    }
+
+    .mission-desc {
+        font-size: 1.5rem;
+    }
+
+    .recycle.visible {
+        height: 10rem;
+    }
+
 }
