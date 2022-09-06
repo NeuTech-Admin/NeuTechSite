@@ -12,7 +12,7 @@ class Testimonial extends Component {
 
         this.state = {
             text: 'stories-wrapper',
-            usingTech: 'using-tech'
+            // usingTech: 'using-tech'
         }
     }
 
@@ -22,7 +22,7 @@ class Testimonial extends Component {
         setTimeout(() => {
             this.setState({
                 text: 'stories-wrapper visible',
-                usingTech: 'using-tech visible'
+                // usingTech: 'using-tech visible'
             })
         }, 100);
     }

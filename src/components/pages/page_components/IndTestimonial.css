@@ -14,7 +14,7 @@
     width: 100%;
     flex-direction: row;
 }
-
+/* 
 .using-tech{
     width: 480px;
     height: 300px;
@@ -28,7 +28,7 @@
 .using-tech.visible {
     opacity: 1;
     transform: translateX(0);
-}
+} */
 
 .stat-div {
     margin: 0 auto;
@@ -258,10 +258,10 @@
         margin: 0 auto 0 auto;
         padding: 0rem;
     }
-    
+/*     
     .using-tech{
         display: none;
-    }
+    } */
 
     .stories-wrapper {
         max-width: fit-content;

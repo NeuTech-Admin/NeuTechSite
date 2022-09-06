@@ -1,5 +1,60 @@
+.support-wrapper{
+    background: white;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: row;
+}
+
+.helping-hands{
+    opacity: 0;
+    transform: translateX(25%);
+    transition: all ease 1.25s;
+    margin-left: 1rem;
+    width: 480px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: translateX(25%);
+    transition: all ease 1.25s;
+    margin-left: 1rem;
+}
+
+.helping-hands.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sup-mission-wrapper{
+    opacity: 0;
+    transition: opacity ease 1.25s;
+    max-width: 38vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.sup-mission-wrapper.visible{
+    opacity: 1;
+}
+
 .mission-container {
     width: 100%;
+}
+
+.sup-mission-heading{
+    font-family: nunito-black;
+    font-size: 4rem;
+    color: #2585BB;
+    margin-bottom: 2rem;
+}
+
+.sup-mission-statement{
+    font-family: nunito-extra-bold;
+    font-size: 1.6rem;
+    color: #2585BB;
 }
 
 .support-us-header {
@@ -54,6 +109,8 @@
 .outreach-email {
     text-decoration: underline;
     cursor: pointer;
+    font-family: nunito-extra-bold;
+    font-size: 1.8rem;
 }
 
 .outreach-email:hover {
