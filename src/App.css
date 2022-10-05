@@ -19,7 +19,8 @@ body, html {
 .contact,
 .events,
 .three-arms,
-.meet-us {
+.meet-us,
+.gallery {
   min-height: 100vh;
   position: relative;
   /* margin-top: 5rem; */

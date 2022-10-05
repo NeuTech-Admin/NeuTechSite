@@ -9,6 +9,7 @@ import Events from './components/pages/Events'
 import TheThreeArms from './components/pages/TheThreeArms'
 import Testimonial from './components/pages/Testimonial'
 import MeetUs from './components/pages/MeetUs'
+import Gallery from './components/pages/Gallery'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/testimony" exact component={Testimonial}/>
         <Route path="/three-arms" exact component={TheThreeArms}/>
         <Route path="/meet-us" exact component={MeetUs}/>
+        <Route path="/gallery" exact component={Gallery}/>
         {/* <Route path="/events" exact component={Events}/> */}
       </Switch>
     </BrowserRouter>

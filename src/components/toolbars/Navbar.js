@@ -55,11 +55,11 @@ function Navbar(props) {
                                 Support Us
                             </Link>
                         </li>
-                        {/* <li className='nav-item'>
-                            <Link to='/events' id={props.events} className='nav-links' onClick={closeMobileMenu}>
-                                Events
+                        <li className='nav-item'>
+                            <Link to='/gallery' id={props.gallery} className='nav-links' onClick={closeMobileMenu}>
+                                Gallery
                             </Link>
-                        </li> */}
+                        </li>
                         {/* <li className='nav-item'>
                             <Link to='/volunteer' className='nav-links' onClick={closeMobileMenu}>
                                 Volunteer

@@ -1,0 +1,75 @@
+.pictures-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-heading{
+    font-family: ubuntu-bold;
+    text-align: center;
+    font-size: 4rem;
+    color: #2585BB;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.pictures {
+    padding: 10rem;
+    width: 110rem;   
+}
+
+.images{
+    opacity: 0;
+    transform: translateX(25%);
+    transition: all ease 1.25s;
+    margin-top: -4rem;
+    width: 400px;
+    opacity: 0;
+    transform: translateX(25%);
+    transition: all ease 1.25s;
+}
+
+.images.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.images.eraTruck{
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.images.arduino{
+    width: 818px;
+    margin-bottom: 1rem;
+}
+
+.images.desktops{
+    width: 302px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.images.whiteboard{
+    width: 600px;
+    margin: 2rem 2rem 1rem 1rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+
+.images.teaching{
+    width: 253px;
+    margin: 2rem 2rem 1rem 1rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+
+.images.laptop{
+    width: 698px;
+    margin-top: 1rem;
+}
+
+.images.electronics{
+    width: 521px;
+    margin-left: 2rem;
+    
+}
