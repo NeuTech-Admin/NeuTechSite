@@ -16,7 +16,6 @@
     transition: all ease 1.25s;
     margin-top: -4rem;
     width: 400px;
-    border-radius: 1rem;
     opacity: 0;
     transform: translateX(25%);
     transition: all ease 1.25s;
