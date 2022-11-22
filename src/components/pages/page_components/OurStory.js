@@ -85,7 +85,7 @@ class OurStory extends Component {
                             <BsPeopleFill className="icon" />
                             <span className="card-title">Who we are</span>
                             <p className="card-description">Meet the people behind the NT Foundation.</p>
-                            <Link className="nav-card-link" ><Button children="Meet Us" buttonSize="btn--large-invert" path='/meet-us' /></Link>
+                            <Link className="nav-card-link" ><Button children="Meet Us" buttonSize="btn--large-invert" path='/about-us' /></Link>
                         </div>
                         <div className={this.state.card3}>
                             <GiHealthNormal className="icon" />
