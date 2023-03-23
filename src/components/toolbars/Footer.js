@@ -27,7 +27,7 @@ function Footer() {
                         </div>
                     </div>
                 </section>
-                <p className="footer-site-title">© 2021 NeuTech Foundation</p>
+                <p className="footer-site-title">© 2023 NeuTech Foundation</p>
             </div>
         </div> 
     )
