@@ -22,7 +22,7 @@ function App() {
         <Route path="/support-us" exact component={SupportUs}/>
         <Route path="/testimony" exact component={Testimonial}/>
         <Route path="/three-arms" exact component={TheThreeArms}/>
-        {/* <Route path="/meet-us" exact component={MeetUs}/> */}
+        <Route path="/meet-us" exact component={MeetUs}/>
         <Route path="/gallery" exact component={Gallery}/>
         {/* <Route path="/events" exact component={Events}/> */}
       </Switch>
