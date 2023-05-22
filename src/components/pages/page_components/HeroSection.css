@@ -171,7 +171,7 @@
 }
 
 .wave .shape-fill {
-    fill: #6dbae7;
+    fill: #2585BB;
 }
 
 .wave-bottom {
@@ -189,11 +189,11 @@
 }
 
 .wave-bottom .shape-fill {
-    fill: #6dbae7;
+    fill: #2585BB;
 }
 
 .wave-content-wrapper {
-    background-color: #6dbae7;
+    background-color: #2585BB;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,11 +208,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly; 
-    background-color: #6dbae7;
+    background-color: #2585BB;
 }
 
 .initiatives-content {
-    background-color: #6dbae7;
+    background-color: #2585BB;
     display: flex;
     text-align: center;
     flex-direction: row;

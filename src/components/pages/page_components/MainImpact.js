@@ -17,20 +17,20 @@ function MainImpact(props) {
                 <div className="main-impact-wrapper">
                     <div className="main-impact-stats">
                         <FaMoneyBill className="main-impact-stat-icon"/>
-                        <p className="main-impact-stat-desc">Collected over</p>
+                        <p className="main-impact-stat-desc">Educated Over</p>
                         <p className="main-impact-stat-text">
-                            <CountUp className="main-impact-countup-stat" end={15000} prefix="$" duration={4.5} useEasing="ease" />
+                            <CountUp className="main-impact-countup-stat" end={150} suffix="+" duration={4.5} useEasing="ease" />
                             <br/>
-                            worth of electronics
+                            Youth
                         </p>
                     </div>
                     <div className="main-impact-stats">
                         <FaRecycle className="main-impact-stat-icon"/>
                         <p className="main-impact-stat-desc">Recycled</p>
                         <p className="main-impact-stat-text">
-                            <CountUp className="main-impact-countup-stat" end={700} duration={4.5} suffix="+" useEasing="ease"/>
+                            <CountUp className="main-impact-countup-stat" end={850} duration={4.5} suffix="+" useEasing="ease"/>
                             <br/>
-                            kgs of waste
+                            kgs of  E-Waste
                         </p>
                     </div>
                 </div>
