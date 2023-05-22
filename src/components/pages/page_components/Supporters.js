@@ -28,14 +28,14 @@ class Supporters extends Component {
         return (
             
             <div className="supporter-container">
-                <div class="stacked-div-top">
+                <div className="stacked-div-top">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
                     </svg>
                 </div>
                 <div className="stacked-div-content">
                     <div className={this.state.text}>
-                            <span className="supporter-heading">Our Sponsors</span>
+                        <span className="supporter-heading">Our Sponsors</span>
                     </div>
                     <div className="supporter-wrapper">
                         <img className={this.state.risingYouth} src="rising-youth.png" alt="Rising Youth" />
@@ -43,9 +43,9 @@ class Supporters extends Component {
                         <img className={this.state.risingYouth} src="canada-corps.png" alt="Canada Corps" />
                     </div>
                 </div>
-                <div class="stacked-div-bottom">
+                <div className="stacked-div-bottom">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
                     </svg>
                 </div>
             </div>

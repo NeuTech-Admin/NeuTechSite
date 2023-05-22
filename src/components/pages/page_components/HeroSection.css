@@ -28,6 +28,12 @@
     margin-right: 7.5rem;
 }
 
+.community.right {
+    transform: translateX(50%);
+    margin-right: 0rem;
+    margin-left: 7.5rem;
+}
+
 .community.visible {
     transform: translateX(0);
     opacity: 1;
@@ -44,14 +50,19 @@
 .init-title{
     font-family: nunito-extra-bold;
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin: 3rem 0rem 2rem 0rem;
     color: #fff;
+}
+
+.init-content-title {
+    font-family: nunito-extra-bold;
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
 }
 
 .init-desc{
     font-family: nunito-black;
     font-size: 2rem;
-    color: #fff;
     margin-bottom: 3rem;
 }
 
@@ -126,7 +137,7 @@
     margin-top: -8rem;
     opacity: 0;
     transition: all ease 1.5s;
-    transform: translateY(150%);
+    transform: translateY(100%);
 }
 
 .bubbles.visible{
@@ -160,7 +171,7 @@
 }
 
 .wave .shape-fill {
-    fill: #2585BB;
+    fill: #6dbae7;
 }
 
 .wave-bottom {
@@ -178,17 +189,41 @@
 }
 
 .wave-bottom .shape-fill {
-    fill: #2585BB;
+    fill: #6dbae7;
+}
+
+.wave-content-wrapper {
+    background-color: #6dbae7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .wave-content {
     width: 100%;
-    height: 40rem;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly; 
+    background-color: #6dbae7;
+}
+
+.initiatives-content {
+    background-color: #6dbae7;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
     justify-content: center; 
-    background-color: #2585BB;
+    padding: 2rem;
+    transition: all ease 0.75s;
+    color: #fff;
+    flex: 1;
+    height: 18rem;
+    color: #fff;
 }
 
 .wave-content .shape-fill{
@@ -230,6 +265,12 @@
 
 .learn.visible{
     opacity: 1;
+}
+
+.small-img {
+    width: 0rem;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s linear, all 0.3s ease;
 }
 
 @media screen and (max-width: 1200px) {

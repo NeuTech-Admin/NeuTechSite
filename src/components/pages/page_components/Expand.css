@@ -1,0 +1,33 @@
+.expand-container {
+    width: 100%;
+}
+
+.expand-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.vert-divider{
+    width: 1px;
+    height: 120px;
+    background-color: #fff;
+}
+
+.divs {
+    flex: 1;
+    text-align: center;
+    transition: all ease 0.3s;
+    height: 15rem;
+}
+
+#init-content-one:hover, #init-content-two:hover, #init-content-three:hover {
+    flex: 1.5;
+    height: 20rem;
+}
+
+.para {
+    visibility: hidden;
+}

@@ -16,11 +16,6 @@ export default class OurImpact extends Component {
             <div>
                 <div className="impact-container">
                     <div className="impact-text">
-                        <span className="impact-title">Our next event will be held on <br/>February 21st</span>
-                    </div>
-                </div>
-                <div className="impact-container">
-                    <div className="impact-text">
                         <GiBullseye className="bullseye-icon"/>
                         <span className="impact-title">Our Impact</span>
                         <span className="first-event">Results of our of our events in 2021</span>

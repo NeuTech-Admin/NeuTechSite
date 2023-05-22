@@ -8,6 +8,8 @@ function Navbar(props) {
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const [initClass, setInitClass] = useState('initiatives-wrapper');
+    const [linkClass, setLinkClass] = useState('nav-links');
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -17,6 +19,16 @@ function Navbar(props) {
         } else {
             setButton(true);
         }
+    }
+
+    const mouseOver = () => {
+        setInitClass('initiatives-wrapper visible');
+        setLinkClass('nav-links init-id-nav-item');
+    }
+
+    const mouseOut = () => {
+        setInitClass('initiatives-wrapper');
+        setLinkClass('nav-links');
     }
 
     window.addEventListener('resize', showButton);
@@ -45,10 +57,21 @@ function Navbar(props) {
                                 About Us
                             </Link>
                         </li>
-                        <li className='nav-item'>
-                            <Link to='/initiatives' id={props.initiatives} className='nav-links' onClick={closeMobileMenu}>
+                        <li className='nav-item' onMouseOver={mouseOver} onMouseOut={mouseOut} onMouseDown={mouseOver}>
+                            <Link to='/' id={props.initiatives} className={linkClass} onClick={closeMobileMenu}>
                                 Initiatives
                             </Link>
+                            <div className={initClass}>
+                                <Link to="/yousen" id={props.initiatives1} className="initiative-links">
+                                    YouSEN
+                                </Link>
+                                <Link to="/access-tech" id={props.initiatives2} className="initiative-links">
+                                    Access Tech
+                                </Link>
+                                <Link to="/ewaste" id={props.initiatives3} className="initiative-links">
+                                    E-Waste
+                                </Link>
+                            </div>
                         </li>
                         <li className='nav-item'>
                             <Link to='/support-us' id={props.supportUs} className='nav-links' onClick={closeMobileMenu}>

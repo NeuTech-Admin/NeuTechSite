@@ -59,13 +59,12 @@
 }
 
 .btn--medium:hover, .btn--large:hover {
-    background: var(--text);
-    color: #2FB7F1;
+    background: #1e87b8;    
     border: 0px;
 }
 
 .btn--large-invert:hover{
-    background: #2FB7F1;
+    background: #1e87b8;
     color: var(--text);
     border: 0px;
 }
