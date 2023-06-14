@@ -63,6 +63,11 @@
     opacity: 1;
 }
 
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
 @media screen and (max-width: 1000px) {
     /* .using-tech {
         display: none;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaMoneyBill, FaRecycle } from 'react-icons/fa'
+import { BsPeopleFill } from 'react-icons/bs'
 import { GiBullseye } from 'react-icons/gi'
 import CountUp from 'react-countup';
 import './MainImpact.css'
@@ -16,7 +17,7 @@ function MainImpact(props) {
                 <div className="main-impact-heading">Our Impact</div>
                 <div className="main-impact-wrapper">
                     <div className="main-impact-stats">
-                        <FaMoneyBill className="main-impact-stat-icon"/>
+                        <BsPeopleFill className="main-impact-stat-icon"/>
                         <p className="main-impact-stat-desc">Educated Over</p>
                         <p className="main-impact-stat-text">
                             <CountUp className="main-impact-countup-stat" end={150} suffix="+" duration={4.5} useEasing="ease" />

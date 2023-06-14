@@ -63,9 +63,9 @@ class OurStory extends Component {
                 <div className="story-container">
                     <img className={this.state.logoImg} src="SiteLogoTextless.png" alt="Site Logo Textless" />
                     <div className="motto">
-                        <p className={this.state.reuse}>Reuse</p>
-                        <p className={this.state.reduce}>Reduce</p>
-                        <p className={this.state.renew}>Renew</p>
+                        <p className={this.state.reuse}>Reduce</p>
+                        <p className={this.state.reduce}>Renew</p>
+                        <p className={this.state.renew}>Reinforce</p>
                     </div>
                 </div>
                 <div class="stacked-div-top">
