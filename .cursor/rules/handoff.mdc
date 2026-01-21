@@ -1,0 +1,1084 @@
+---
+description: Use this rule ONLY when explicitly requested to create a handoff document for the next agent. This is activated when you're specifically asked to "create a handoff" or "prepare handoff documentation" due to context limitations or before switching to a fresh agent instance. When activated, create a comprehensive handoff document that enables seamless continuation of work without loss of context or momentum.
+alwaysApply: false
+---
+🎯 CORE HANDOFF PHILOSOPHY: COMPLETE CONTEXT TRANSFER
+
+FUNDAMENTAL PRINCIPLE: The next agent should feel like they were there from the beginning.
+
+Your job when creating a handoff is to distill everything that matters into a comprehensive, scannable, actionable document. The next agent should not need to read through hundreds of messages or hunt for context—everything they need should be in your handoff document.
+The Three Pillars of Effective Handoffs
+
+    COMPLETENESS - All critical decisions, patterns, and context included
+    CLARITY - Organized, scannable, with clear "what's done" vs "what's next"
+    ACTIONABILITY - Next agent can start coding immediately after reading
+
+🚨 WHEN TO CREATE A HANDOFF
+Activation Triggers
+
+Create a handoff document when:
+
+    Context usage approaching 70-80% of limit
+    Major feature completed and about to start a new one
+    Architectural decisions made that next agent needs to understand
+    Complex debugging completed with important learnings
+    Multiple related features have been implemented
+    Database schema changes were applied
+    New patterns established that should be followed
+    Critical bugs fixed with context on root cause
+
+Don't Wait Until Context is Full
+
+⚠️ CRITICAL: Create handoff BEFORE hitting context limits, not after. You need enough context to:
+
+    Summarize what was done clearly
+    Document important decisions and reasoning
+    Identify what's next
+    Note any gotchas or learnings
+
+📋 HANDOFF DOCUMENT STRUCTURE
+Standard Template
+
+Every handoff document should follow this structure:
+markdown
+
+# 🔄 Project Handoff Document - [Feature/Phase Name]
+
+**Date:** [Date]
+**From:** [Current Phase/Agent Description]
+**To:** [Next Phase/Agent Description]
+
+---
+
+## 🎯 CRITICAL: READ THIS FIRST
+
+**⚠️ BEFORE IMPLEMENTING ANYTHING:**
+
+1. **Familiarize yourself with the codebase**
+2. **Read this handoff document completely**
+3. **Review referenced files and documentation**
+4. **Test the current state of the application**
+5. **Understand what's working and what's next**
+
+---
+
+## 📋 Executive Summary
+
+### What We've Accomplished ([Phase/Feature Name])
+
+[2-3 paragraph overview of what was completed]
+
+**Key Stats:**
+- ✅ [Major accomplishment 1]
+- ✅ [Major accomplishment 2]
+- ✅ [Major accomplishment 3]
+
+### What's Next ([Next Phase/Feature Name])
+
+[2-3 paragraph overview of what needs to be built]
+
+---
+
+## 🏗️ Architecture Overview
+
+### Current System Architecture
+
+[Include ASCII diagrams showing current architecture]
+```
+┌─────────────────┐
+│    Component    │
+└─────────────────┘
+        │
+        ▼
+┌─────────────────┐
+│   Next Layer    │
+└─────────────────┘
+```
+
+### Database Schema (Current State)
+
+[Document current database tables, relationships, constraints]
+```sql
+table_name:
+  - column1 (TYPE, constraints)
+  - column2 (TYPE, constraints)
+```
+
+---
+
+## 🔐 Critical Implementation Details
+
+### [System/Feature Area 1]
+
+#### File: `/path/to/file.ts`
+- **Purpose:** [What this file does]
+- **Key Functions:** [Important functions]
+- **Critical Notes:** [Important behaviors, gotchas]
+
+### [System/Feature Area 2]
+
+[Continue pattern for all major areas]
+
+---
+
+## 🛠️ Environment Setup
+
+### Dependencies Installed
+- [Dependency 1] - [Purpose]
+- [Dependency 2] - [Purpose]
+
+### Environment Variables
+```bash
+KEY_NAME="value" # Purpose/explanation
+```
+
+### Running the Application
+```bash
+# Commands to start services
+```
+
+---
+
+## 🚀 What's Working Now
+
+### ✅ Fully Functional
+
+1. **[Feature Name]**
+   - [Specific capability]
+   - [Another capability]
+   
+2. **[Another Feature]**
+   - [Details]
+
+---
+
+## 🎯 What Needs to Be Built (Your Work)
+
+### Phase [N]: [Phase Name]
+
+**Goal:** [High-level goal]
+
+#### [N].1 [Subtask Name]
+- **File:** `/path/to/file`
+- [Description of what needs to be built]
+- [Key considerations]
+
+#### [N].2 [Next Subtask]
+[Continue pattern]
+
+---
+
+## ⚠️ Critical Considerations & Pitfalls
+
+### 1. [Important Consideration]
+
+[Explain why this matters and how to handle it]
+
+❌ **Wrong:**
+```typescript
+// Bad example
+```
+
+✅ **Right:**
+```typescript
+// Correct example
+```
+
+### 2. [Another Critical Point]
+
+[Continue pattern for all gotchas]
+
+---
+
+## 🧪 Development Guidelines
+
+### 1. Patterns Established
+
+[Document any new patterns that should be followed]
+
+### 2. Testing Strategy
+
+[How to test the current features and new features]
+
+### 3. Code Organization
+
+[Expected file structure and organization]
+
+---
+
+## 🔍 Debugging Tips
+
+### Common Issues & Solutions
+
+#### Issue: [Problem Description]
+**Cause:** [Why this happens]
+**Solution:** [How to fix it]
+
+---
+
+## 📚 Key Files Reference
+
+### Must-Read Files
+1. **`/path/to/file1`** - [Purpose]
+2. **`/path/to/file2`** - [Purpose]
+
+### Configuration Files
+- `/path/to/config` - [Purpose]
+
+### Important Code Patterns
+[Show critical patterns that are used throughout]
+
+---
+
+## 🎯 Success Criteria for [Next Phase]
+
+### Phase [N]: [Phase Name]
+- [ ] [Specific deliverable]
+- [ ] [Another deliverable]
+- [ ] [Testing criteria]
+
+---
+
+## 🤝 Communication & Handoff
+
+### Important Decisions Made
+
+1. **[Decision Topic]**
+   - **Decision:** [What was decided]
+   - **Reasoning:** [Why this was chosen]
+   - **Alternatives Considered:** [Other options]
+
+### Patterns to Follow
+
+1. **[Pattern Name]**
+   - [Description and example]
+
+### Known Issues / Technical Debt
+
+1. **[Issue Description]**
+   - **Impact:** [How this affects development]
+   - **Plan:** [How/when to address]
+
+---
+
+## 🚀 Getting Started Checklist
+
+**For the next agent:**
+
+1. [ ] Read this entire handoff document
+2. [ ] Review [list of key files]
+3. [ ] Start the application and test current functionality
+4. [ ] Verify [specific things to verify]
+5. [ ] Understand [critical concepts]
+6. [ ] NOW you're ready to start [next phase]! 🎉
+
+---
+
+## 📝 Final Notes
+
+### What We're Proud Of
+- ✅ [Accomplishment with explanation]
+- ✅ [Another accomplishment]
+
+### What to Watch Out For
+- ⚠️ [Warning with explanation]
+- ⚠️ [Another warning]
+
+### Architecture Philosophy
+[Key principles that guide this project]
+
+---
+
+*Document prepared by: [Agent/Phase Description]*
+*Date: [Date]*
+*Questions? Review the [relevant documentation]*
+
+📐 HANDOFF DOCUMENT PRINCIPLES
+1. Write for Someone Starting Fresh
+
+Assume the next agent has:
+
+    ✅ Access to the codebase
+    ✅ Understanding of the tech stack
+    ✅ Development best practices knowledge
+    ❌ NO context from previous conversations
+    ❌ NO memory of decisions made
+    ❌ NO knowledge of "why" things were done certain ways
+
+2. Be Comprehensive But Scannable
+
+Structure for scanning:
+
+    Use clear headings and subheadings
+    Include emoji indicators (✅ ❌ ⚠️ 🎯)
+    Use visual diagrams for architecture
+    Highlight critical sections with bold and code blocks
+    Keep paragraphs short (3-5 sentences max)
+    Use checklists liberally
+
+3. Focus on "Why" Not Just "What"
+
+Don't just document what was done:
+markdown
+
+❌ BAD: "We added a lab_id column to the samples table"
+
+✅ GOOD: "We added a lab_id column to the samples table to enable 
+multi-tenancy. Each lab owns their samples, preventing data leakage 
+between labs. This column will be made required (NOT NULL) after we 
+backfill existing data in Phase 6."
+
+4. Include Context for Decisions
+
+For every significant decision, document:
+
+    What was decided
+    Why it was decided (reasoning)
+    What alternatives were considered
+    What the trade-offs are
+    When you might reconsider this decision
+
+Example:
+markdown
+
+## Decision: Using Supabase Auth Instead of Custom JWT
+
+**What:** We migrated from custom JWT auth to Supabase Auth.
+
+**Why:** 
+- Custom JWT implementation was insecure (weak secret, no refresh tokens)
+- Supabase provides production-ready auth with best practices
+- Reduces maintenance burden (password resets, email verification, etc.)
+- Enables social login in the future
+
+**Alternatives Considered:**
+1. Fix custom JWT (would require significant security work)
+2. Auth0 (more expensive, overkill for current needs)
+3. Firebase Auth (vendor lock-in concerns)
+
+**Trade-offs:**
+- ✅ Better security and features
+- ✅ Less code to maintain
+- ❌ Dependency on Supabase (mitigation: can self-host)
+- ❌ Need to learn Supabase patterns
+
+**Reconsider if:** Scale requires custom auth service or Supabase pricing becomes prohibitive
+
+5. Document Patterns and Standards
+
+If you established new patterns, document them:
+markdown
+
+## Pattern: Lab Context Validation
+
+**Every resource query must filter by lab_id:**
+```python
+# ALWAYS do this
+samples = await db.execute(
+    select(Sample)
+    .where(Sample.lab_id == current_lab_id)
+    .where(Sample.is_active == True)
+)
+```
+
+**Rationale:** Prevents data leakage between labs. Even if a user somehow gets 
+another lab's resource ID, the query will return nothing.
+
+**Where this applies:** All resource models (samples, equipment, consumables, etc.)
+
+6. Highlight What's NOT Done
+
+Be explicit about incomplete work:
+markdown
+
+## ⚠️ Incomplete: Email Verification Flow
+
+**Current State:** Email verification is DISABLED in local development 
+(`enable_confirmations = false` in `supabase/config.toml`)
+
+**What's Missing:**
+- Email verification enabled for production
+- Email templates customized
+- Resend verification email endpoint
+- Handle verified/unverified user states in UI
+
+**Priority:** Must complete before production deploy (Phase 10)
+
+**Blocked by:** Nothing, just needs implementation
+
+**Estimated Effort:** 4-6 hours
+
+7. Include Visual Aids
+
+Use ASCII diagrams for:
+
+    Architecture flow
+    Database relationships
+    User workflows
+    Component hierarchy
+    Data flow
+
+Example:
+markdown
+
+### Authentication Flow
+```
+User Signs Up
+    ↓
+Supabase Auth: Creates auth.users record
+    ↓
+Trigger: handle_new_user() fires
+    ↓
+Creates matching public.users record
+    ↓
+User receives JWT token
+    ↓
+Frontend stores session
+```
+
+8. Provide Debugging Context
+
+Document common issues encountered:
+markdown
+
+## Debugging: "User not found in public.users"
+
+**Symptoms:**
+- User can sign up but API requests fail with 401
+- Supabase shows user in auth.users but not in public.users
+
+**Root Cause:**
+Database trigger `handle_new_user()` failed to execute
+
+**How to Fix:**
+1. Check Supabase Studio → Logs → Postgres for trigger errors
+2. Verify trigger exists: `SELECT * FROM pg_trigger WHERE tgname = 'on_auth_user_created';`
+3. Re-apply trigger from `/backend/supabase/migrations/001_auth_triggers.sql`
+4. Manually create public.users record if needed
+
+**Prevention:**
+- Monitor Supabase logs during signup
+- Add better error messages in trigger function
+- Consider adding retry logic
+```
+
+---
+
+## 🎨 VISUAL DOCUMENTATION STANDARDS
+
+### Use Consistent Symbols
+
+**Status Indicators:**
+- ✅ Complete, working, verified
+- ❌ Wrong way, anti-pattern, don't do this
+- ⚠️ Warning, watch out, important caveat
+- 🎯 Goal, objective, target
+- 🚀 Ready to implement, next step
+- 🔍 Debug tip, investigation needed
+- 📋 Checklist, action items
+- 💡 Insight, learning, best practice
+- 🏗️ Architecture, structure, design
+- 🔐 Security concern, permission required
+
+### Architecture Diagrams
+
+**Follow this pattern:**
+```
+┌─────────────────┐
+│  Component      │  ← Clear labels
+│  (Technology)   │  ← Show tech stack
+└────────┬────────┘
+         │ 
+         │ Labeled connection
+         ▼
+┌─────────────────┐
+│  Next Layer     │
+└─────────────────┘
+
+Database Schema Documentation
+
+Be consistent:
+sql
+
+table_name:
+  - id (UUID, PK)
+  - foreign_id (UUID, FK to other_table)
+  - column_name (TYPE, constraints)
+  - created_at (TIMESTAMP, default NOW())
+  
+  Relationships:
+  - belongs_to: other_table
+  - has_many: child_table
+  
+  Indexes:
+  - idx_table_name_foreign_id
+  
+  Constraints:
+  - UNIQUE(column1, column2)
+
+Code Examples
+
+Always show both wrong and right:
+markdown
+
+❌ **Wrong:**
+```typescript
+// Problematic code
+const bad = await doSomethingUnsafe();
+```
+
+✅ **Right:**
+```typescript
+// Correct approach
+try {
+  const good = await doSomethingSafely();
+} catch (error) {
+  handleError(error);
+}
+```
+
+**Why:** [Explanation of the difference and consequences]
+
+🔄 HANDOFF WORKFLOW
+Step 1: Assess When to Handoff
+
+Check these indicators:
+
+    Context usage at 70%+ of limit
+    Major feature branch complete
+    About to start a significantly different feature
+    Complex problem solved with important learnings
+    Multiple files modified with interconnected changes
+
+Step 2: Organize Your Thoughts
+
+Before writing, outline:
+
+    What was the goal of this session?
+    What did we accomplish?
+    What decisions were made and why?
+    What patterns emerged?
+    What's next?
+    What could trip up the next agent?
+
+Step 3: Create the Handoff Document
+
+File naming: HANDOFF_[PHASE]_[DATE].md
+
+Example: HANDOFF_PHASE_4_LAB_BACKEND_2025_12_20.md
+
+Location: Store in project root or /docs/handoffs/
+Step 4: Structure the Document
+
+Follow the standard template provided above, adapting sections as needed.
+
+Key sections (required):
+
+    ✅ Executive Summary
+    ✅ What We've Accomplished
+    ✅ What's Next
+    ✅ Architecture Overview
+    ✅ Critical Implementation Details
+    ✅ Environment Setup (if changed)
+    ✅ What's Working Now
+    ✅ What Needs to Be Built
+    ✅ Critical Considerations & Pitfalls
+    ✅ Debugging Tips
+    ✅ Getting Started Checklist
+
+Optional sections (include if relevant):
+
+    Performance Optimizations Applied
+    Security Improvements Made
+    Technical Debt Identified
+    Testing Strategy
+    Deployment Notes
+
+Step 5: Self-Review Checklist
+
+Before finalizing the handoff:
+
+Content Completeness:
+
+    All major decisions documented with reasoning
+    All new patterns explained
+    All modified files listed with explanations
+    All environment changes noted
+    All gotchas and pitfalls highlighted
+    Clear "what's done" vs "what's next" sections
+
+Clarity:
+
+    Next agent can start immediately after reading
+    No assumed knowledge from previous conversations
+    All acronyms and jargon defined
+    Visual diagrams for complex concepts
+    Code examples for important patterns
+
+Actionability:
+
+    Getting Started checklist is complete
+    Success criteria clearly defined
+    Next steps are specific and actionable
+    Testing instructions provided
+    Common issues documented with solutions
+
+Organization:
+
+    Consistent formatting throughout
+    Clear hierarchy with headings
+    Scannable with bullet points and checklists
+    Important sections highlighted
+    Table of contents if document is long
+
+Step 6: Test the Handoff
+
+Imagine you are the next agent:
+
+    Can you understand what was done?
+    Can you see why decisions were made?
+    Do you know what to build next?
+    Can you start coding immediately?
+    Do you have enough context to debug issues?
+
+If NO to any question: Add more detail to that section.
+📊 HANDOFF QUALITY CRITERIA
+Excellent Handoff Characteristics
+
+✅ An excellent handoff:
+
+    Next agent feels confident and informed
+    Zero time wasted hunting for context
+    All critical decisions explained
+    Patterns are clear and consistent
+    Getting started is straightforward
+    Debugging common issues is covered
+    Success criteria are unambiguous
+
+Example of Excellence: The provided HANDOFF_PHASE_4_LAB_BACKEND_2025_12_20.md is a gold standard example:
+
+    Comprehensive executive summary
+    Clear architecture diagrams
+    Detailed "what's done" vs "what's next"
+    Critical considerations with code examples
+    Debugging tips for common issues
+    Step-by-step getting started checklist
+    Success criteria for each phase
+
+Poor Handoff Characteristics
+
+❌ A poor handoff:
+
+    Assumes prior conversation knowledge
+    Lists files changed without explaining why
+    No context on decisions made
+    Missing patterns and standards
+    Unclear what's working vs what's not
+    No debugging guidance
+    Vague next steps
+
+Example of What NOT to Do:
+markdown
+
+# Handoff
+
+We added some lab stuff. The database is updated. Need to finish the frontend.
+
+Files changed:
+- lab.py
+- lab_service.py
+- models.py
+
+Next: Build the UI
+
+Why This is Bad:
+
+    No context on what "lab stuff" means
+    No explanation of database changes
+    No architecture overview
+    No patterns documented
+    No getting started guide
+    No success criteria
+    Too vague to be useful
+
+🎯 SPECIAL HANDOFF SCENARIOS
+Scenario 1: Mid-Feature Handoff
+
+When: Feature is partially complete, need fresh context to finish
+
+Include:
+
+    What's Implemented: Detailed list with file references
+    What's In Progress: Current blockers or work-in-progress
+    What's Remaining: Specific tasks to complete the feature
+    Dependencies: What needs to exist before finishing
+    Testing Done: What's been tested, what hasn't
+
+Example:
+markdown
+
+## Feature Status: Lab Invitation System
+
+### ✅ Implemented
+- Backend: Invitation creation API (`/labs/{id}/invite`)
+- Database: lab_invitations table with unique tokens
+- Service: Token generation with expiration
+
+### 🔄 In Progress
+- Email sending integration (Supabase email templates)
+- Frontend: Invitation acceptance page (70% complete)
+
+### ⏳ Remaining
+- [ ] Complete invitation acceptance UI
+- [ ] Add invitation list page for lab admins
+- [ ] Handle expired invitation errors gracefully
+- [ ] Add resend invitation functionality
+
+### 🧪 Testing Done
+- ✅ Token generation is cryptographically secure
+- ✅ Expiration logic works correctly
+- ❌ Email sending not tested (Supabase not configured)
+- ❌ Frontend flow not tested end-to-end
+
+### 🚧 Blockers
+- Need to configure SMTP in Supabase for email testing
+- Decision needed: Should invitations be single-use or reusable?
+
+Scenario 2: Bug Fix Handoff
+
+When: Major bug was fixed, next agent should know about it
+
+Include:
+
+    Bug Description: What was broken
+    Root Cause: Why it was broken
+    Fix Applied: How it was solved
+    Files Changed: What code was modified
+    Prevention: How to avoid this in the future
+    Testing: How to verify the fix
+
+Example:
+markdown
+
+## Bug Fix: Users Could Access Other Labs' Data
+
+### 🐛 Bug Description
+API endpoints were not filtering resources by lab_id, allowing users to 
+access samples/equipment from labs they don't belong to by guessing IDs.
+
+### 🔍 Root Cause
+- Queries only filtered by `is_active` status
+- No lab_id validation in middleware
+- Frontend trusted backend would enforce access
+
+### ✅ Fix Applied
+1. Added mandatory `lab_id` filter to all resource queries
+2. Created `validate_lab_access()` dependency
+3. All routes now check user is in the lab before returning data
+
+### 📝 Files Changed
+- `/backend/src/samples/service.py`: Added lab_id filtering
+- `/backend/src/auth/dependencies.py`: New `validate_lab_access()`
+- `/backend/src/samples/router.py`: Applied dependency to all routes
+
+### 🛡️ Prevention
+**Pattern to Follow:**
+```python
+# ALWAYS include in resource queries
+.where(Resource.lab_id == current_lab_id)
+
+# ALWAYS use this dependency on lab resource routes
+@router.get("/samples", dependencies=[Depends(validate_lab_access)])
+```
+
+### 🧪 Testing
+Verified:
+- Users can only see their lab's resources
+- Attempting to access other lab IDs returns 403
+- All resource endpoints protected
+
+**Test this manually:**
+1. Create two test users in different labs
+2. Try to fetch resources with other lab's IDs
+3. Should return 403 Forbidden
+
+Scenario 3: Architecture Change Handoff
+
+When: Significant architectural decision or refactor was made
+
+Include:
+
+    Old Architecture: How it worked before
+    New Architecture: How it works now
+    Reasoning: Why the change was made
+    Migration Path: How existing code should be updated
+    Impact: What this means for future development
+    Rollback Plan: How to revert if needed
+
+Example:
+markdown
+
+## Architecture Change: Switched from Redux to Zustand
+
+### 📐 Old Architecture
+- Used Redux Toolkit for global state
+- Actions, reducers, slices spread across multiple files
+- Thunks for async operations
+- ~800 lines of boilerplate
+
+### 📐 New Architecture
+- Zustand for lightweight global state
+- Single store file per domain
+- Simplified async with built-in support
+- ~200 lines total
+
+### 🤔 Reasoning
+1. **Complexity:** Redux was overkill for our state needs
+2. **Boilerplate:** Too much code for simple state updates
+3. **Learning Curve:** Zustand is easier for new developers
+4. **Bundle Size:** Zustand is 2KB vs Redux Toolkit 13KB
+
+### 🔄 Migration Path
+
+**Old Pattern (Redux):**
+```typescript
+// store/slices/userSlice.ts
+const userSlice = createSlice({...})
+export const { setUser } = userSlice.actions
+
+// component
+dispatch(setUser(data))
+```
+
+**New Pattern (Zustand):**
+```typescript
+// store/userStore.ts
+export const useUserStore = create((set) => ({
+  user: null,
+  setUser: (user) => set({ user })
+}))
+
+// component
+const { user, setUser } = useUserStore()
+```
+
+### 📊 Impact
+- **Future State:** Use Zustand for all new global state
+- **Existing Code:** Migrate remaining Redux slices gradually
+- **Pattern:** Each domain gets its own Zustand store
+
+### ⏮️ Rollback Plan
+If issues arise:
+1. Redux code saved in `src/store/legacy/`
+2. Can run both Redux and Zustand in parallel
+3. Swap imports back to Redux providers
+4. Estimated rollback time: 2 hours
+
+Scenario 4: Performance Optimization Handoff
+
+When: Significant performance work was done
+
+Include:
+
+    Problem: What was slow
+    Measurements: Benchmarks before optimization
+    Changes Made: What was optimized
+    Results: Benchmarks after optimization
+    Trade-offs: Any complexity added
+    Monitoring: How to track performance going forward
+
+Example:
+markdown
+
+## Performance Optimization: Sample List Rendering
+
+### 🐌 Problem
+Sample list page was taking 5+ seconds to render with 1000+ samples.
+Users experienced lag when scrolling.
+
+### 📊 Before Optimization
+- Initial render: 5.2s
+- Time to Interactive: 6.1s
+- Re-renders per scroll: 60+
+- Memory usage: 450MB
+
+### ⚡ Changes Made
+1. **Virtualization:** Implemented react-window for list
+2. **Memoization:** Wrapped SampleCard with React.memo
+3. **Pagination:** API now returns 50 samples per page
+4. **Lazy Images:** Sample images load on demand
+
+### 📊 After Optimization
+- Initial render: 0.8s (6.5x faster)
+- Time to Interactive: 1.2s (5x faster)
+- Re-renders per scroll: 3-5 (12x fewer)
+- Memory usage: 120MB (3.7x less)
+
+### ⚖️ Trade-offs
+- ✅ Dramatic performance improvement
+- ✅ Better user experience
+- ❌ Added react-window dependency (29KB)
+- ❌ Slightly more complex component code
+
+### 📈 Monitoring
+**Watch these metrics:**
+- Lighthouse Performance score (target: > 90)
+- Time to Interactive (target: < 2s)
+- Memory usage in DevTools (target: < 200MB)
+
+**Files to Check:**
+- `/components/samples/SampleList.tsx` - Virtualization logic
+- `/components/samples/SampleCard.tsx` - Memoized component
+- `/api/samples.ts` - Pagination logic
+
+🚀 POST-HANDOFF RESPONSIBILITIES
+For the Agent Creating the Handoff
+
+Before signing off:
+
+    ✅ Handoff document is complete and reviewed
+    ✅ Code is committed with clear commit messages
+    ✅ Any environment changes are documented
+    ✅ Tests are passing (or test plan documented if not)
+    ✅ No obvious broken functionality
+    ✅ Getting started checklist is accurate
+
+Final message to user:
+markdown
+
+## Handoff Complete 🎉
+
+I've created a comprehensive handoff document: `HANDOFF_[NAME].md`
+
+**What's Done:**
+- [Summary of accomplishments]
+
+**What's Next:**
+- [Next phase overview]
+
+**For the Next Agent:**
+Please read the handoff document completely before starting. It contains:
+- Complete architecture overview
+- All critical decisions and reasoning
+- Patterns to follow
+- Getting started checklist
+- Success criteria
+
+The application is in a stable state and ready for the next phase of development.
+
+For the Agent Receiving the Handoff
+
+First steps:
+
+    📖 Read handoff document completely (don't skim)
+    🔍 Review listed files to understand current code
+    ▶️ Start the application and test current functionality
+    ✅ Verify everything in "What's Working" actually works
+    🎯 Understand success criteria for your phase
+    ❓ Ask clarifying questions if anything is unclear
+
+If context is unclear:
+markdown
+
+I've reviewed the handoff document. Before proceeding, I need clarification on:
+
+1. **[Topic]**: [Specific question]
+2. **[Another Topic]**: [Another question]
+
+Once these are clarified, I can proceed with implementing [next phase].
+
+Acknowledge the handoff:
+markdown
+
+✅ Handoff received and reviewed.
+
+**My Understanding:**
+- Current state: [Summary]
+- My goal: [What I'll build]
+- Success criteria: [How I'll know I'm done]
+
+**Starting with:**
+[First specific task]
+
+I'll create my own handoff document when my context reaches 70% or when [phase] is complete.
+
+✅ HANDOFF QUALITY CHECKLIST
+
+Before considering a handoff complete:
+Content Quality
+
+    Executive summary clearly states what was done and what's next
+    All architectural decisions documented with reasoning
+    Database schema changes explained (if applicable)
+    Environment changes noted (if applicable)
+    New patterns documented with examples
+    Critical pitfalls highlighted with solutions
+    Debugging tips for common issues included
+
+Completeness
+
+    All modified files listed with purpose
+    All new dependencies explained
+    All configuration changes documented
+    All incomplete work explicitly called out
+    Technical debt identified and tracked
+    Testing status clear (what's tested, what's not)
+
+Clarity
+
+    Can be understood without prior conversation context
+    Visual diagrams for complex architecture
+    Code examples for important patterns
+    ❌/✅ examples showing wrong vs right approaches
+    Consistent formatting and structure
+    Scannable with headings and bullet points
+
+Actionability
+
+    Getting started checklist is complete and accurate
+    Next steps are specific and actionable
+    Success criteria clearly defined
+    Files to review are listed
+    Commands to run are provided
+    Expected behavior is described
+
+Testing
+
+    You've mentally walked through as the next agent
+    All instructions are accurate
+    No assumed knowledge
+    Getting started checklist actually works
+    Success criteria are measurable
+
+💡 FINAL PRINCIPLES
+The Golden Rule of Handoffs
+
+"Would I be able to continue this work if I read this handoff in 6 months with no memory of the project?"
+
+If the answer is NO, add more context.
+The Platinum Rule of Handoffs
+
+"Can the next agent start being productive within 15 minutes of reading this handoff?"
+
+If the answer is NO, improve clarity and organization.
+The Diamond Rule of Handoffs
+
+"Does this handoff make the next agent feel confident and excited to continue, rather than confused and overwhelmed?"
+
+If the answer is NO, simplify and add encouraging notes about what was accomplished.
+🎯 SUCCESS METRICS
+
+A successful handoff means:
+
+    ✅ Next agent can start coding within 15 minutes
+    ✅ No context is lost from previous work
+    ✅ Patterns and standards are maintained
+    ✅ Architectural decisions are understood
+    ✅ Common pitfalls are avoided
+    ✅ Testing strategy is clear
+    ✅ Success is measurable
+    ✅ Project momentum is maintained
+
+Remember: A great handoff is an investment in project velocity. The 30-60 minutes spent creating a thorough handoff saves hours of confusion, context-gathering, and potential rework for the next agent.
+
+Make every handoff count. The project's success depends on seamless continuity. 🚀
