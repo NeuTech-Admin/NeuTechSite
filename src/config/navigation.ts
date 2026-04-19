@@ -25,6 +25,11 @@ export const DROPDOWN_NAV: DropdownNavItem = {
   label: 'Initiatives',
   items: [
     {
+      title: 'OAISus',
+      href: '/oaisus',
+      description: 'Optimizing AI for Sustainability',
+    },
+    {
       title: 'YouSEN',
       href: '/yousen',
       description: 'Youth in Sustainable Engineering',
@@ -33,11 +38,6 @@ export const DROPDOWN_NAV: DropdownNavItem = {
       title: 'E-Waste Management',
       href: '/ewaste',
       description: 'Technology reuse and redistribution',
-    },
-    {
-      title: 'OAISus',
-      href: '/oaisus',
-      description: 'Optimizing AI for Sustainability',
     },
   ],
 }
@@ -52,9 +52,9 @@ export const SECONDARY_NAV_ITEMS: NavItem[] = [
 export const MOBILE_NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about-us' },
+  { label: 'OAISus', href: '/oaisus' },
   { label: 'YouSEN', href: '/yousen' },
   { label: 'E-Waste Management', href: '/ewaste' },
-  { label: 'OAISus', href: '/oaisus' },
   { label: 'Support Us', href: '/support-us' },
   { label: 'Gallery', href: '/gallery' },
 ]

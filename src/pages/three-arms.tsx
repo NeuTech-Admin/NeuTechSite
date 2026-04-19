@@ -24,7 +24,7 @@ export function ThreeArms() {
         </motion.div>
 
         {/* Principles */}
-        <div className="max-w-7xl mx-auto w-full px-8 space-y-32">
+        <div className="max-w-4xl mx-auto w-full px-8 space-y-32">
           {PRINCIPLES.map((principle) => (
             <motion.div
               key={principle.title}
@@ -35,9 +35,8 @@ export function ThreeArms() {
                 duration: ANIMATION_DURATIONS.medium,
                 delay: 0.2,
               }}
-              className={`flex items-center gap-12 max-lg:flex-col ${
-                principle.imagePosition === 'right' ? 'flex-row-reverse' : ''
-              }`}
+              className={`flex items-center gap-12 max-lg:flex-col ${principle.imagePosition === 'right' ? 'flex-row-reverse' : ''
+                }`}
             >
               {/* Image */}
               <motion.div
@@ -56,7 +55,7 @@ export function ThreeArms() {
                 <img
                   src={principle.image}
                   alt={principle.imageAlt}
-                  className="w-[300px] h-auto object-contain max-lg:w-[200px]"
+                  className="w-[150px] h-auto object-contain max-lg:w-[150px]"
                 />
               </motion.div>
 

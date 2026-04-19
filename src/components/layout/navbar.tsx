@@ -1,254 +1,164 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import {
-  NAV_ITEMS,
-  DROPDOWN_NAV,
-  SECONDARY_NAV_ITEMS,
-  MOBILE_NAV_ITEMS,
-  INITIATIVE_PATHS,
-} from '@/config/navigation'
+import { DROPDOWN_NAV, MOBILE_NAV_ITEMS, INITIATIVE_PATHS } from '@/config/navigation'
+import { COLORS, FONTS } from '@/config/theme'
+
+const PILL_NAV_LINKS = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about-us' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Meet Us', href: '/meet-us' },
+]
 
 export function Navbar() {
   const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
 
   const isActive = (path: string) => location.pathname === path
   const isInitiativePath = () => INITIATIVE_PATHS.includes(location.pathname)
 
   return (
-    <nav 
-      className="sticky top-0 z-50 w-full bg-white"
-      style={{ boxShadow: '0px 2px 8px rgba(133, 133, 133, 0.15)' }}
-    >
-      <div className="flex items-center justify-between h-20 px-8">
-        
+    <nav className="sticky top-0 z-50 w-full bg-white/95">
+      <div className="flex items-center justify-between h-16 px-8 max-w-7xl mx-auto">
+
         {/* Logo */}
-        <Link to="/" className="outline-none">
-          <img 
-            src="/SiteLogo.png" 
-            alt="NeuTech Foundation"
-            className="w-[170px] outline-none max-md:hidden"
-          />
-          <img 
-            src="/SiteLogoTextless.png" 
-            alt="NeuTech Foundation"
-            className="w-16 outline-none md:hidden"
-          />
+        <Link to="/" className="outline-none shrink-0">
+          <img src="/SiteLogo.png" alt="NeuTech Foundation" className="w-[145px] outline-none max-md:hidden" />
+          <img src="/SiteLogoTextless.png" alt="NeuTech Foundation" className="w-11 outline-none md:hidden" />
         </Link>
 
-        {/* Desktop Navigation */}
-        <NavigationMenu className="hidden lg:flex" viewport={false}>
-          <NavigationMenuList className="gap-1">
-            
-            {/* Main nav items */}
-            {NAV_ITEMS.map((item) => (
-              <NavItem 
-                key={item.href} 
-                href={item.href} 
-                isActive={isActive(item.href)}
-              >
-                {item.label}
-              </NavItem>
-            ))}
+        {/* Center pill nav — desktop only */}
+        <div className="hidden lg:flex items-center bg-gray-50 border border-gray-100 rounded-full px-2 py-1 gap-0.5">
 
-            {/* Dropdown nav */}
-            <DropdownNav 
-              label={DROPDOWN_NAV.label} 
-              isActive={isInitiativePath()}
+          {/* Static links — expand horizontally on hover */}
+          {PILL_NAV_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              to={item.href}
+              className={cn(
+                'px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200',
+                isActive(item.href)
+                  ? 'text-[#2585BB] font-semibold bg-white shadow-sm px-5'
+                  : 'text-gray-500 hover:text-gray-800 hover:px-6'
+              )}
+              style={{ fontFamily: FONTS.ubuntuBold }}
             >
-              {DROPDOWN_NAV.items.map((item) => (
-                <DropdownItem 
-                  key={item.href}
-                  href={item.href} 
-                  title={item.title}
-                  description={item.description}
-                />
-              ))}
-            </DropdownNav>
+              {item.label}
+            </Link>
+          ))}
 
-            {/* Secondary nav items */}
-            {SECONDARY_NAV_ITEMS.map((item) => (
-              <NavItem 
-                key={item.href} 
-                href={item.href} 
-                isActive={isActive(item.href)}
-              >
-                {item.label}
-              </NavItem>
-            ))}
-
-          </NavigationMenuList>
-        </NavigationMenu>
-
-        {/* Mobile Menu */}
-        <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger className="lg:hidden flex items-center mr-4 text-[#2585BB]">
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-            <span className="ml-2 text-[1.3rem] font-bold hidden sm:inline" style={{ fontFamily: 'Ubuntu-Bold' }}>
-              Menu
-            </span>
-          </SheetTrigger>
-          <SheetContent 
-            side="top" 
-            className="w-full bg-[#47a0d3] pt-20 border-none"
-            style={{ boxShadow: '0px 0px 10px #858585' }}
+          {/* Initiatives dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
           >
-            <div className="flex flex-col items-center text-center">
-              {MOBILE_NAV_ITEMS.map((item) => (
-                <MobileNavItem 
+            <button
+              className={cn(
+                'flex items-center gap-1 px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer',
+                isInitiativePath()
+                  ? 'text-[#2585BB] font-semibold bg-white shadow-sm px-5'
+                  : 'text-gray-500 hover:text-gray-800 hover:px-6'
+              )}
+              style={{ fontFamily: FONTS.ubuntuBold }}
+            >
+              Initiatives
+              <ChevronDown
+                size={13}
+                className={cn('transition-transform duration-200 mt-px', dropdownOpen && 'rotate-180')}
+              />
+            </button>
+
+            {/* pt-2 bridges the hover gap so the mouse doesn't leave the zone */}
+            <AnimatePresence>
+              {dropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -6, scale: 0.97 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -6, scale: 0.97 }}
+                  transition={{ duration: 0.16, ease: 'easeOut' }}
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 z-50"
+                >
+                  <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-2">
+                    {DROPDOWN_NAV.items.map((item) => (
+                      <Link
+                        key={item.href}
+                        to={item.href}
+                        className="block px-3 py-2.5 rounded-xl hover:bg-gray-50 transition-colors group cursor-pointer"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        <div
+                          className="text-sm font-semibold text-gray-800 group-hover:text-[#2585BB] transition-colors"
+                          style={{ fontFamily: FONTS.ubuntuBold }}
+                        >
+                          {item.title}
+                        </div>
+                        <p className="text-xs text-gray-400 mt-0.5 leading-snug">
+                          {item.description}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </div>
+
+        {/* Right: Support Us CTA — desktop only */}
+        <div className="hidden lg:flex items-center">
+          <Link
+            to="/support-us"
+            className="inline-flex items-center text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 hover:opacity-90 active:scale-95 cursor-pointer"
+            style={{ backgroundColor: COLORS.primaryBlue, fontFamily: FONTS.ubuntuBold }}
+          >
+            Support Us
+          </Link>
+        </div>
+
+        {/* Mobile hamburger */}
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <SheetTrigger className="lg:hidden flex items-center text-gray-700 outline-none cursor-pointer">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </SheetTrigger>
+          <SheetContent
+            side="top"
+            className="w-full bg-white pt-20 border-none"
+            style={{ boxShadow: '0px 4px 24px rgba(0,0,0,0.07)' }}
+          >
+            <div className="flex flex-col items-center text-center gap-1 pb-6">
+              {MOBILE_NAV_ITEMS.filter((item) => item.href !== '/support-us').map((item) => (
+                <Link
                   key={item.href}
-                  href={item.href} 
-                  onClick={() => setIsOpen(false)} 
-                  isActive={isActive(item.href)}
+                  to={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className={cn(
+                    'w-full py-3.5 text-gray-700 text-lg font-semibold transition-all rounded-xl',
+                    isActive(item.href) && 'text-[#2585BB] bg-blue-50'
+                  )}
+                  style={{ fontFamily: FONTS.ubuntuBold }}
                 >
                   {item.label}
-                </MobileNavItem>
+                </Link>
               ))}
+              <Link
+                to="/support-us"
+                onClick={() => setIsOpen(false)}
+                className="mt-5 inline-flex text-white text-base font-semibold px-8 py-3 rounded-full cursor-pointer"
+                style={{ backgroundColor: COLORS.primaryBlue, fontFamily: FONTS.ubuntuBold }}
+              >
+                Support Us
+              </Link>
             </div>
           </SheetContent>
         </Sheet>
 
       </div>
     </nav>
-  )
-}
-
-// Regular Nav Item Component
-function NavItem({ 
-  href, 
-  isActive, 
-  children 
-}: { 
-  href: string
-  isActive: boolean
-  children: React.ReactNode 
-}) {
-  return (
-    <NavigationMenuItem>
-      <NavigationMenuLink asChild>
-        <Link 
-          to={href}
-          className={cn(
-            "inline-flex items-center justify-center rounded-md outline-none",
-            "h-10 text-[1.1rem] px-4 cursor-pointer",
-            "transition-colors duration-200",
-            "hover:bg-gray-50 hover:text-cyan-600",
-            isActive 
-              ? "text-[#2585BB] font-extrabold" 
-              : "text-[#2FB7F1] font-bold"
-          )}
-          style={{ fontFamily: 'Ubuntu-Bold' }}
-        >
-          {children}
-        </Link>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-  )
-}
-
-// Dropdown Nav Component
-function DropdownNav({ 
-  label, 
-  isActive, 
-  children 
-}: { 
-  label: string
-  isActive: boolean
-  children: React.ReactNode 
-}) {
-  return (
-    <NavigationMenuItem>
-      <NavigationMenuTrigger 
-        className={cn(
-          "h-10 text-[1.1rem] px-4 cursor-pointer bg-transparent",
-          "transition-colors duration-200",
-          "hover:bg-gray-50 hover:text-cyan-600",
-          isActive 
-            ? "text-[#2585BB] font-extrabold" 
-            : "text-[#2FB7F1] font-bold"
-        )}
-        style={{ fontFamily: 'Ubuntu-Bold' }}
-      >
-        {label}
-      </NavigationMenuTrigger>
-      <NavigationMenuContent className="!bg-white !opacity-100 shadow-md rounded-md border-none p-0">
-        <ul className="grid w-[240px] gap-0 p-2 bg-white">
-          {children}
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-  )
-}
-
-// Dropdown Item Component
-function DropdownItem({
-  href,
-  title,
-  description,
-}: { 
-  href: string
-  title: string
-  description: string
-}) {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <Link 
-          to={href}
-          className={cn(
-            "block select-none space-y-0.5 rounded-md p-2.5 leading-none no-underline outline-none",
-            "transition-all duration-200 hover:bg-gray-50 cursor-pointer group"
-          )}
-        >
-          <div 
-            className="text-sm font-bold leading-tight text-[#2585BB] group-hover:text-[#2585BB]"
-            style={{ fontFamily: 'Ubuntu-Bold' }}
-          >
-            {title}
-          </div>
-          <p className="line-clamp-2 text-[0.7rem] leading-tight text-gray-600 group-hover:text-gray-600 mt-0.5">
-            {description}
-          </p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  )
-}
-
-// Mobile Nav Item Component
-function MobileNavItem({ 
-  href, 
-  onClick, 
-  isActive = false, 
-  children 
-}: { 
-  href: string
-  onClick: () => void
-  isActive?: boolean
-  children: React.ReactNode 
-}) {
-  return (
-    <Link 
-      to={href} 
-      onClick={onClick}
-      className={cn(
-        "w-full py-10 text-white text-[1.75rem] font-bold transition-all",
-        isActive && "bg-[#93d7ff] text-[#2585BB]"
-      )}
-      style={{ fontFamily: 'Ubuntu-Bold' }}
-    >
-      {children}
-    </Link>
   )
 }

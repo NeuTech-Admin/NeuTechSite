@@ -4,6 +4,17 @@
 @custom-variant dark (&:is(.dark *));
 
 /* Import custom fonts */
+/* Declare only the base weight — browser will synthesize bold for font-weight 700+ */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./fonts/PlusJakartaSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('./fonts/ProductSansInfanity.ttf');
+}
+
 @font-face {
   font-family: 'Ubuntu-Bold';
   src: url('./fonts/Ubuntu-Bold.ttf');
@@ -30,7 +41,7 @@
 }
 
 :root {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', 'PT Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -151,6 +162,19 @@
     color: #000000;
     min-height: 100vh;
     width: 100%;
+  }
+
+  /* Global heading weight — applies to real h tags; span-based headings
+     get fontWeight via inline styles in their components */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    font-family: 'Product Sans', sans-serif;
+    -webkit-text-stroke: 0.4px currentColor;
+  }
+
+  button {
+    font-weight: 800;
+    cursor: pointer;
   }
 }
 

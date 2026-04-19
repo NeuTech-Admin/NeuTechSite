@@ -15,9 +15,11 @@ export const COLORS = {
 
 // Typography
 export const FONTS = {
-  nunitoBlack: 'Nunito-Black',
-  nunitoExtraBold: 'Nunito-ExtraBold',
-  ubuntuBold: 'Ubuntu-Bold',
+  heading: 'Product Sans',
+  ui: 'Plus Jakarta Sans',
+  nunitoBlack: 'Product Sans',
+  nunitoExtraBold: 'Product Sans',
+  ubuntuBold: 'Plus Jakarta Sans',
 } as const
 
 // Common styles

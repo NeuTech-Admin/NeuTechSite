@@ -6,11 +6,6 @@ export interface GalleryImage {
 
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
-    src: '/ERA Truck.jpg',
-    alt: 'ERA Truck',
-    caption: 'E-Waste Collection Event',
-  },
-  {
     src: '/Arduino.jpg',
     alt: 'Arduino Workshop',
     caption: 'Electronics Workshop',
