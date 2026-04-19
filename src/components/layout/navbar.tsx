@@ -7,12 +7,16 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { DROPDOWN_NAV, MOBILE_NAV_ITEMS, INITIATIVE_PATHS } from '@/config/navigation'
 import { COLORS, FONTS } from '@/config/theme'
 
-const PILL_NAV_LINKS = [
+const HOME_LINK = [
   { label: 'Home', href: '/' },
+]
+
+const PILL_NAV_LINKS = [
   { label: 'About', href: '/about-us' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Meet Us', href: '/meet-us' },
 ]
+
 
 export function Navbar() {
   const location = useLocation()
@@ -36,7 +40,7 @@ export function Navbar() {
         <div className="hidden lg:flex items-center bg-gray-50 border border-gray-100 rounded-full px-2 py-1 gap-0.5">
 
           {/* Static links — expand horizontally on hover */}
-          {PILL_NAV_LINKS.map((item) => (
+          {HOME_LINK.map((item) => (
             <Link
               key={item.href}
               to={item.href}
@@ -108,6 +112,22 @@ export function Navbar() {
               )}
             </AnimatePresence>
           </div>
+
+          {PILL_NAV_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              to={item.href}
+              className={cn(
+                'px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200',
+                isActive(item.href)
+                  ? 'text-[#2585BB] font-semibold bg-white shadow-sm px-5'
+                  : 'text-gray-500 hover:text-gray-800 hover:px-6'
+              )}
+              style={{ fontFamily: FONTS.ubuntuBold }}
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
 
         {/* Right: Support Us CTA — desktop only */}

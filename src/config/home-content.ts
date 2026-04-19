@@ -16,9 +16,9 @@ export interface Initiative {
 }
 
 export const INITIATIVES: Initiative[] = [
+  { title: 'OAISus', href: '/oaisus' },
   { title: 'YouSEN', href: '/yousen' },
   { title: 'E-Waste Management', href: '/ewaste' },
-  { title: 'OAISus', href: '/oaisus' },
 ]
 
 // Learn More About Us section
