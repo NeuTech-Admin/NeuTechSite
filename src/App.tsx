@@ -1,4 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 import { Home } from './pages/home'
 import { AboutUs } from './pages/about-us'
 import { YouSEN } from './pages/yousen'
@@ -9,12 +16,15 @@ import { Testimonial } from './pages/testimonial'
 import { ThreeArms } from './pages/three-arms'
 import { MeetUs } from './pages/meet-us'
 import { Gallery } from './pages/gallery'
+import { JoinUs } from './pages/join-us'
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/join-us" element={<JoinUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/yousen" element={<YouSEN />} />
         <Route path="/ewaste" element={<EWaste />} />

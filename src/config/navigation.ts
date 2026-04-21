@@ -55,8 +55,10 @@ export const MOBILE_NAV_ITEMS: NavItem[] = [
   { label: 'OAISus', href: '/oaisus' },
   { label: 'YouSEN', href: '/yousen' },
   { label: 'E-Waste Management', href: '/ewaste' },
-  { label: 'Support Us', href: '/support-us' },
+  { label: 'Join Us', href: '/join-us' },
+  { label: 'Meet Us', href: '/meet-us' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Support Us', href: '/support-us' },
 ]
 
 // Helper to check if current path is an initiative

@@ -153,21 +153,28 @@ export function NeuTechOrbit({ className }: { className?: string }) {
           <filter id="ntf-shadow-light" x="-40%" y="-40%" width="180%" height="180%">
             <feDropShadow dx="0" dy="5" stdDeviation="10" floodColor="#0A6080" floodOpacity="0.45" />
           </filter>
+          <style>{`
+            @keyframes ntf-march { to { stroke-dashoffset: -30; } }
+            .ntf-orbit-0 { animation: ntf-march 2.0s linear infinite; }
+            .ntf-orbit-1 { animation: ntf-march 2.5s linear infinite; }
+            .ntf-orbit-2 { animation: ntf-march 3.2s linear infinite; }
+          `}</style>
         </defs>
 
         {/* Orbit ring strokes — each rotated to its own tilt angle */}
         {ORBITS.map((o, i) => (
           <path
-            stroke-width="5"
-            stroke-dasharray="5 25"
-            stroke-linecap="square"
-            fill="none"
             key={i}
+            className={`ntf-orbit-${i}`}
             d={ellipsePath(o.rx, o.ry)}
             transform={`rotate(${o.tiltDeg}, ${CX}, ${CY})`}
-            stroke={'#2585BB'}
-            strokeWidth="2"
-            opacity="0.1"
+            fill="none"
+            stroke="#2585BB"
+            strokeWidth="2.5"
+            strokeDasharray="6 24"
+            strokeDashoffset="0"
+            strokeLinecap="round"
+            opacity="0.45"
           />
         ))}
 

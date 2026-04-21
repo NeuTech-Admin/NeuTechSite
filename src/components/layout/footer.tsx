@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Twitter, Facebook } from 'lucide-react'
 import { COLORS, FONTS } from '@/config/theme'
 
 const FOOTER_DARK = COLORS.primaryBlue
@@ -11,6 +10,7 @@ const FOOTER_LINKS = [
   { label: 'YouSEN', href: '/yousen' },
   { label: 'E-Waste Management', href: '/ewaste' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Join Us', href: '/join-us' },
   { label: 'Support Us', href: '/support-us' },
 ]
 
@@ -89,23 +89,6 @@ export function Footer() {
               >
                 info@ntfoundation.ca
               </a>
-              <p
-                className="text-white/70 text-xs leading-relaxed"
-                style={{ fontFamily: FONTS.ui }}
-              >
-                Follow us to stay up to date with our initiatives and events.
-              </p>
-              <div className="flex gap-3 mt-1">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="cursor-pointer text-white/75 hover:text-white transition-colors duration-200">
-                  <Instagram size={20} />
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="cursor-pointer text-white/75 hover:text-white transition-colors duration-200">
-                  <Twitter size={20} />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="cursor-pointer text-white/75 hover:text-white transition-colors duration-200">
-                  <Facebook size={20} />
-                </a>
-              </div>
             </div>
           </div>
 

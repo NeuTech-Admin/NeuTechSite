@@ -9,12 +9,13 @@ import { COLORS, FONTS } from '@/config/theme'
 
 const HOME_LINK = [
   { label: 'Home', href: '/' },
+  { label: 'About', href: '/about-us' },
 ]
 
 const PILL_NAV_LINKS = [
-  { label: 'About', href: '/about-us' },
-  { label: 'Gallery', href: '/gallery' },
+  { label: 'Join Us', href: '/join-us' },
   { label: 'Meet Us', href: '/meet-us' },
+  { label: 'Gallery', href: '/gallery' },
 ]
 
 
