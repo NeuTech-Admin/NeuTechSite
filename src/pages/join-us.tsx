@@ -7,7 +7,7 @@ import { COLORS, FONTS, ANIMATION_DURATIONS } from '@/config/theme'
 const OPPORTUNITY_CARDS = [
   {
     icon: Briefcase,
-    title: 'Career Opportunities',
+    title: 'Job Opportunities',
     description:
       'Join our growing team and help drive meaningful change through technology and innovation. We welcome passionate individuals from every background.',
     badge: 'Coming Soon',
