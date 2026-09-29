@@ -20,7 +20,7 @@ export const FOUNDERS: Founder[] = [
   },
   {
     name: 'Rohan Birk',
-    role: 'Co-Founder & Co-Director',
+    role: 'Co-Director',
     image: '/rohan.jpg',
     bio: "I am a master's student working at the Surgical Technologies Lab at the University of British Columbia, with a background in biomedical engineering. I am passionate about bringing novel healthcare technologies to clinicians in a sustainable way, and to directly support communities that are disproportionately affected by gaps in healthcare and technology. Through my work, I hope to bridge engineering, healthcare, and community-driven solutions to create technologies that are not only innovative, but also accessible and sustainable.",
   },
