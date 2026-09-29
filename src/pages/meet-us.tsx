@@ -29,7 +29,7 @@ export function MeetUs() {
         </motion.div>
 
         {/* Founders Grid */}
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:[&>*:last-child:nth-child(odd)]:col-span-2">
           {FOUNDERS.map((founder, index) => (
             <motion.div
               key={founder.name}

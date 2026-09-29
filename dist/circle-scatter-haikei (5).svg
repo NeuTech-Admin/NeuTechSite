@@ -1,0 +1,12 @@
+<svg id="visual" viewBox="0 0 300 300" width="300" height="300"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <g fill="#2585BB">
+        <circle r="33" cx="60" cy="245"></circle>
+        <circle r="15" cx="143" cy="78"></circle>
+        <circle r="29" cx="255" cy="205"></circle>
+        <circle r="31" cx="61" cy="52"></circle>
+        <circle r="16" cx="278" cy="139"></circle>
+        <circle r="30" cx="194" cy="270"></circle>
+    </g>
+</svg>
