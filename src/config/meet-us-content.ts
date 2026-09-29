@@ -8,19 +8,19 @@ export interface Founder {
 export const FOUNDERS: Founder[] = [
   {
     name: 'Ripdaman Malhans',
-    role: 'Co-Founder',
+    role: 'Co-Founder & Co-Director',
     image: '/ripdaman.png',
     bio: 'I am the Lead Engineer at VRNDA Labs with a background in Computer & Mechatronics engineering. I am passionate about tackling the disproportionate access to technology that exists today and working towards a more sustainable technological future for communities across Canada. In addition to this, with AI rapidly transforming every aspect of society, my experience in machine learning development has deepened my belief that these technologies must be built with efficiency and sustainability in mind.',
   },
   {
     name: 'Amit Sharma',
-    role: 'Co-Founder',
+    role: 'Co-Founder & Co-Director',
     image: '/amit.png',
     bio: 'I am a student researcher, medical student, and former sustainability ambassador at the University of British Columbia. I have extensive leadership experience and have been involved in robotics, technology, and sustainability for over a decade. I aspire to educate youth on the importance of viewing STEM innovation through a sustainability lens. I am passionate about community initiatives and education because I believe issues such as climate change and pollution can be countered starting at a grassroots level.',
   },
   {
     name: 'Rohan Birk',
-    role: 'Co-Founder',
+    role: 'Co-Founder & Co-Director',
     image: '/rohan.jpg',
     bio: "I am a master's student working at the Surgical Technologies Lab at the University of British Columbia, with a background in biomedical engineering. I am passionate about bringing novel healthcare technologies to clinicians in a sustainable way, and to directly support communities that are disproportionately affected by gaps in healthcare and technology. Through my work, I hope to bridge engineering, healthcare, and community-driven solutions to create technologies that are not only innovative, but also accessible and sustainable.",
   },
